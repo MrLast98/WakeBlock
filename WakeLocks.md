@@ -1,5 +1,5 @@
 ## WAKELOCKS
-***net_scheduler*** ~ _3 600 000 ms_
+**\*net_scheduler\*** ~ _3 600 000 ms_
 
 **CMWakeLock** ~ _900 000 ms_
 
