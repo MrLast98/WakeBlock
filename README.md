@@ -11,11 +11,11 @@
 
 **Q - Which wakelock should i block? For how long?**
 
-**A** - We suggest to check out the Amplify guide on XDA (https://goo.gl/NUYbCj). Remember: if you don't find one of the wakelocks, just check in later. If you still don't find it, don't worry at all! Side note: the search button is not case-sensitive.
+**A** - We suggest to check out this guide on XDA (https://goo.gl/PFAPJ2) to fully understand what it means to block a wakelocks and how it affects your system. 
 
 **Q - I'm lazy af and i don't want to read all of that, can't you give me a short list?**
 
-**A** - Ok, but we don't take any responsibilities if the phone bricks or your ROM explodes. You are totally free to change the blocking time value to make it as you please but, again, we don't take any responsibilities. You can find the list here: https://goo.gl/xAE8ny
+**A** - Ok, but we don't take any responsibilities if the phone bricks or your ROM explodes. You are totally free to change the blocking time value to make it as you please but, again, we don't take any responsibilities. You can find the list here: https://goo.gl/xAE8ny **Remember:** if you don't find one of the wakelocks, just check in later. If you still don't find it, don't worry at all! **Side note:** the search button is _not_ case-sensitive.
 
 **Q - When is the new version/fix/graphic coming?**
 
