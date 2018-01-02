@@ -45,7 +45,7 @@
 In this case, *boot into your custom recovery of choice* (***TWRP for example, you can't do it from a root explorer***) and mount your ***/system partition***. Now check both **/system/framework/oat/arm** and **/system/framework/oat/arm64** for a ***service.odex and a service.vdex***. Here, **COPY** (and ***DO NOT MOVE***) the files from the backup and paste them to replace the files in your system (*one of the two folders above*). Now ***delete the app*** and you're now **WakeBlock-free!**
 
 **CASE 2: FILE = services.jar | DEODEXED ROM**
-In this case, *boot into your custom recovery of choice* (***TWRP for example, you can't do it from a root explorer***) and mount your ***/system partition***. Here, **COPY** (and ***DO NOT MOVE***) the file from the backup and paste it to replace the file in your system (***/system/framework***). Now ***delete the app*** and you're now **WakeBlock-free!**
+In this case, *boot into your custom recovery of choice* (***TWRP for example, you can't do it from a root explorer***) and mount your ***/system partition.*** Here, **COPY** (and ***DO NOT MOVE***) the file from the backup and paste it to replace the file in your system (in this case ***/system/framework***). Now ***delete the app*** and you're now **WakeBlock-free!**
 
 **Q - YOUR APP DOESN'T WORK, WHY?**
 
