@@ -39,7 +39,13 @@
 
 **Q - How can i uninstall the app?**
 
-**A** - First of all, we are sad that you want to leave us. If you didn't install the Core Mod, or it failed in any way, you just need to delete the app and everything is gone! If you did install successfully the Core Mod, replace the service.odex you find in the data folder (/sdcard/WakeBlock) with the one of your device (Depending on which ROM you use and which device you use, it can be in different positions) and then delete the app. Otherwise, we suggest a flash of the system.img of your ROM.
+**A** - First of all, *we are sad that you want to leave us.* If you **didn't install the Core Mod**, or it failed in any way, *you just need to delete the app* and everything is gone! If you **did install successfully the Core Mod**, check the WakeBlock backup folder ***(/sdcard/WakeBlock/Backups)***. You will find a bunch of different folders with different dates and times. Pick **the most recent** one and look inside.Here, you will have one of **two cases:**
+
+**CASE 1: FILES = services.odex & and services.vdex | ODEXED ROM**
+In this case, *boot into your custom recovery of choice* (***TWRP for example, you can't do it from a root explorer***) and mount your ***/system partition***. Now check both **/system/framework/oat/arm** and **/system/framework/oat/arm64** for a ***service.odex and a service.vdex***. Here, **COPY** (and ***DO NOT MOVE***) the files from the backup and paste them to replace the files in your system (*one of the two folders above*). Now ***delete the app*** and you're now **WakeBlock-free!**
+
+**CASE 2: FILE = services.jar | DEODEXED ROM**
+In this case, *boot into your custom recovery of choice* (***TWRP for example, you can't do it from a root explorer***) and mount your ***/system partition***. Here, **COPY** (and ***DO NOT MOVE***) the file from the backup and paste it to replace the file in your system (***/system/framework***). Now ***delete the app*** and you're now **WakeBlock-free!**
 
 **Q - YOUR APP DOESN'T WORK, WHY?**
 
