@@ -17,17 +17,17 @@
 
 **A** - Ok, but we don't take any responsibilities if the phone bricks or your ROM explodes. You are totally free to change the blocking time value to make it as you please but, again, we don't take any responsibilities. You can find the list here: https://goo.gl/xAE8ny **Remember:** if you don't find one of the wakelocks, just check in later. If you still don't find it, don't worry at all! **Side note:** the search button is _not_ case-sensitive.
 
+**Q - Can i block the [wakelock name] wakelock?**
+
+**A** - If it is part of the list linked above, you're good to go! If not, we can't assure a thing, but if you find any safe-to-block wakelock let us know!
+
 **Q - When is the new version/fix/graphic coming?**
 
 **A** - _Do not ask for an ETA._ We do this for free, without any ads in the app nor donation packages, we don't even put a price on our app. We all have jobs, university and a private life to manage, we don't have superpowers, so managing all of this takes time. Our free time is pretty short, but we usually put at least half of it on the developing of the app. Be patient and do not harass the team nor the telegram group.
 
-**Q - Can i block the [wakelock name] wakelock?**
-
-**A** - If it is part of the list down here, you're good to go! If not, we can't assure a thing, but if you find any safe-to-block wakelock let us know!
-
 **Q - Your app killed [insert any feature here] in my phone!**
 
-**A** - Everything is done by user input, the app by itself (even with the core mod installed), so unless you blocked something we didn't i think the problem and the app are unrelated.
+**A** - Everything is done by user input, the app by itself (even with the core mod installed) doesn't do anything but reading which wakelock the system is calling. Unless you blocked something we didn't suggest you do to this problem and our app are totally unrelated.
 
 **Q - Your app is killing my battery life! WTF!**
 
