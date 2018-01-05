@@ -65,8 +65,6 @@ In this case, *boot into your custom recovery of choice* (***TWRP for example, y
 **A** - Thank you!
 
 ## TO-DO LIST | 
-- Automatic Core Mod Removal
-- Automatic Core Mod Detection (to avoid double install and eventual bootloops)
 - Alarms. Yeah.
 - Fixing problems related to some Samsung devices and Pixel devices
 - Import/Export system for the blocked Wakelock
