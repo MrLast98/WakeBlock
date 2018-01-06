@@ -3,7 +3,7 @@
 
 **Q - How do i use wakeblock?**
 
-**A** - Once you have installed the app, just open it and click on "Install Core Mod", the app will create the Core Mod needed for your device (this might take a while) and then will reboot the phone to flash it. When the phone has rebooted, open the app: If the message says "Service Bound" you're all set!
+**A** - Once you have installed the app, just open it and click on "Install Core Mod", the app will create the Core Mod needed for your device (this might take a while, from 5 to 30 minutes) and then will reboot the phone to flash it. When the phone has rebooted, open the app: If the message says "Service Bound" you're all set!
 
 **Q - How can i block wakelocks?**
 
