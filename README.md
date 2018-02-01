@@ -63,7 +63,7 @@ In this case, *boot into your custom recovery of choice* (***TWRP for example, y
 
 **A** - Thank you!
 
-## TO-DO LIST | 
+## TO-DO LIST
 - Alarms. Yeah.
 - Fixing problems related to some Samsung devices and Pixel devices
 - Import/Export system for the blocked Wakelock
