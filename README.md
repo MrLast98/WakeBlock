@@ -29,6 +29,10 @@
 
 **A** - Everything is done by user input, the app by itself (even with the core mod installed) doesn't do anything but reading which wakelock the system is calling. Unless you blocked something we didn't suggest you do to this problem and our app are totally unrelated.
 
+**Q - I want to build the service.odex for my phone manually, how do i do that?**
+
+**A** - Easy: Download the **whole sourcecode** of your ROM, then copy the files you find here https://goo.gl/vg23MU in _wakeblock/templates/java/services/core/java/com/_ and place them into the sourcecode. You will deal with _two_ files: *PowerManagerService.java* and *WakeBlockService.java*. For **WakeBlockService.java**, you just need to create the directory tree into your sourcecode **corresponding to the GitHub directory tree** (_services/core/java/com/giovannibozzano/wakeblock_) and place the file there, for **PowerManagerService.java**, you have to check inside the *PowerManagerService.java* file on GitHub for the piece of code **surrounded in "WAKEBLOCK" comments** and place that piece of code **in the same place inside your PowerManagerService.java** in ***the same place as you see in the file on GitHub***. Then, just run the command **make services** in your shell of choice and you will have in your output directory *all the files you need!* (**SIDE NOTE:** You only need **service.odex and service.vdex**, nothing else). Just copy the old .odex and .vdex somewhere as a backup and place the file you created in the *right directory* (**/system/framework/oat/arm** or **/system/framework/oat/arm64**, depending on your system). If it bootloops, **you might have fucked up!**
+
 **Q - Your app is killing my battery life! WTF!**
 
 **A** - By itself, the app doesn't do anything even with the core mod installed. Keep WakeBlock whitelisted in every hybernation app (like greenify) but the basic Android Optimization. If the battery drain has increased, double check what you blocked, that might be the reason!
@@ -67,6 +71,6 @@ In this case, *boot into your custom recovery of choice* (***TWRP for example, y
 - Alarms. Yeah.
 - Fixing problems related to some Samsung devices and Pixel devices
 - Import/Export system for the blocked Wakelock
-- Inserting the FAQ and the suggested wakelock-to-block list into the actual app
+- Inserting the FAQ and the suggested wakelock-to-block list into the actual app ~ Soon to be.
 - Adding the feature to change the block time without unblocking the wakelock
 - Various fixes and improvements
