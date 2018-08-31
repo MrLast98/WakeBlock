@@ -1,92 +1,92 @@
-<p><big><strong>Here you can find the most common questions and their respective answer. Simple as that. READ THEM.</strong></big></p>
+<p align="justify"><big><strong>Here you can find the most common questions and their respective answer. Simple as that. READ THEM.</strong></big></p>
 <br />
-<br />
-<p><strong>Q - How do I use WakeBlock?</strong></p>
+<br /><br /><br /><br />
+<p align="justify"><strong>Q - How do I use WakeBlock?</strong></p>
 <br />
 <p align="justify"><strong>A</strong> - Once you have installed the app, just open it and click on "Install Core Mod", the app will create the Core Mod needed for your device (this might take a while, from 5 to 30 minutes) and then will reboot the phone to flash it. When the phone has rebooted, open the app: If the message says "Service Bound" you're all set!</p>
 <br />
 <br />
-<p><strong>Q - How can I block wakelocks?</strong></p>
+<p align="justify"><strong>Q - How can I block wakelocks?</strong></p>
 <br />
-<p><strong>A</strong> - From within the app, just switch to the "Wakelock" tab. Here every wakelock recorded since the first boot with the core mod installed, so give it at least 2/3 days of normal use before blocking anything. Click on the wakelock you want to block, press the "Block" button and then set for how long is the wakelock gonna be blocked!</p>
-<br />
-<br />
-<p><strong>Q - Which wakelock should I block? For how long?</strong></p>
-<br />
-<p><strong>A</strong> - We suggest to check out this guide on XDA (<a href="https://goo.gl/PFAPJ2">https://goo.gl/PFAPJ2</a>) to fully understand what it means to block a wakelocks and how it affects your system.</p>
+<p align="justify"><strong>A</strong> - From within the app, just switch to the "Wakelock" tab. Here every wakelock recorded since the first boot with the core mod installed, so give it at least 2/3 days of normal use before blocking anything. Click on the wakelock you want to block, press the "Block" button and then set for how long is the wakelock gonna be blocked!</p>
 <br />
 <br />
-<p><strong>Q - I'm lazy af and I don't want to read all of that, can't you give me a short list?</strong></p>
+<p align="justify"><strong>Q - Which wakelock should I block? For how long?</strong></p>
 <br />
-<p><strong>A</strong> - Ok, but we don't take any responsibilities if the phone bricks or your ROM explodes. You are totally free to change the blocking time value to make it as you please but, again, we don't take any responsibilities. You can find the list here: <a href="https://goo.gl/xAE8ny">https://goo.gl/xAE8ny</a></p>
-<p><strong>Remember:</strong> if you don't find one of the wakelocks, just check in later. If you still don't find it, don't worry at all!</p>
-<p><strong>Side note:</strong> the search button is <em>not</em> case-sensitive.</p>
+<p align="justify"><strong>A</strong> - We suggest to check out this guide on XDA (<a href="https://goo.gl/PFAPJ2">https://goo.gl/PFAPJ2</a>) to fully understand what it means to block a wakelocks and how it affects your system.</p>
 <br />
 <br />
-<p><strong>Q - Can I block the [wakelock name] wakelock?</strong></p>
+<p align="justify"><strong>Q - I'm lazy af and I don't want to read all of that, can't you give me a short list?</strong></p>
 <br />
-<p><strong>A</strong> - If it is part of the list linked above, you're good to go! If not, we can't assure a thing, but if you find any safe-to-block wakelock let us know!</p>
-<br />
-<br />
-<p><strong>Q - When is the new version/fix/graphic coming?</strong></p>
-<br />
-<p><strong>A</strong> - <em>Do not ask for an ETA.</em> We do this for free, without any ads in the app nor donation packages, we don't even put a price on our app. We all have jobs, university and a private life to manage, we don't have superpowers, so managing all of this takes time. Our free time is pretty short, but we usually put at least half of it on the developing of the app. Be patient and do not harass the team nor the telegram group.</p>
+<p align="justify"><strong>A</strong> - Ok, but we don't take any responsibilities if the phone bricks or your ROM explodes. You are totally free to change the blocking time value to make it as you please but, again, we don't take any responsibilities. You can find the list here: <a href="https://goo.gl/xAE8ny">https://goo.gl/xAE8ny</a></p>
+<p align="justify"><strong>Remember:</strong> if you don't find one of the wakelocks, just check in later. If you still don't find it, don't worry at all!</p>
+<p align="justify"><strong>Side note:</strong> the search button is <em>not</em> case-sensitive.</p>
 <br />
 <br />
-<p><strong>Q - Your app killed [insert any feature here] in my phone!</strong></p>
+<p align="justify"><strong>Q - Can I block the [wakelock name] wakelock?</strong></p>
 <br />
-<p><strong>A</strong> - Everything is done by user input, the app by itself (even with the core mod installed) doesn't do anything but reading which wakelock the system is calling. Unless you blocked something we didn't suggest you do to this problem and our app are totally unrelated.</p>
-<br />
-<br />
-<p><strong>Q - I want to build the service.odex for my phone manually, how do I do that?</strong></p>
-<br />
-<p><strong>A</strong> - <strong>GUIDE FOR ODEXED ROMS</strong> Easy: Download the <strong>whole sourcecode</strong> of your ROM, then copy the files you find here <a href="https://goo.gl/vg23MU">https://goo.gl/vg23MU</a> in <em>wakeblock/templates/java/services/core/java/com/</em> and place them into the sourcecode. You will deal with <em>two</em> files: <em>PowerManagerService.java</em> and <em>WakeBlockService.java</em>. For <strong>WakeBlockService.java</strong>, you just need to create the directory tree into your sourcecode <strong>corresponding to the GitHub directory tree</strong> (<em>services/core/java/com/giovannibozzano/wakeblock</em>) and place the file there, for <strong>PowerManagerService.java</strong>, you have to check inside the <em>PowerManagerService.java</em> file on GitHub for the piece of code <strong>surrounded in "WAKEBLOCK" comments</strong> and place that piece of code <strong>in the same place inside your PowerManagerService.java</strong> in <strong><em>the same place as you see in the file on GitHub</em></strong>. Then, just run the command <strong>make services</strong> in your shell of choice and you will have in your output directory <em>all the files you need!</em> (<strong>Side note:</strong> You only need <strong>service.odex and service.vdex</strong>, nothing else). Just copy the old .odex and .vdex somewhere as a backup and place the file you created in the <em>right directory</em> (<strong>/system/framework/oat/arm</strong> or <strong>/system/framework/oat/arm64</strong>, depending on your system). If it bootloops, <strong>you might have fucked up!</strong></p>
+<p align="justify"><strong>A</strong> - If it is part of the list linked above, you're good to go! If not, we can't assure a thing, but if you find any safe-to-block wakelock let us know!</p>
 <br />
 <br />
-<p><strong>Q - Your app is killing my battery life! WTF!</strong></p>
+<p align="justify"><strong>Q - When is the new version/fix/graphic coming?</strong></p>
 <br />
-<p><strong>A</strong> - By itself, the app doesn't do anything even with the core mod installed. Keep WakeBlock whitelisted in every hybernation app (like greenify) but the basic Android Optimization. If the battery drain has increased, double check what you blocked, that might be the reason!</p>
-<br />
-<br />
-<p><strong>Q - I just updated and it doesn't see the Core Mod!</strong></p>
-<br />
-<p><strong>A</strong> - It's a known bug. Check if the app kept all permission (Both <em>root privileges</em> and <em>Storage permission</em>) and simply reboot your phone. It will magically start to see it again!</p>
-<p><strong>Side note:</strong> you don't need to reinstall the Core Mod every time you update the app!</p>
+<p align="justify"><strong>A</strong> - <em>Do not ask for an ETA.</em> We do this for free, without any ads in the app nor donation packages, we don't even put a price on our app. We all have jobs, university and a private life to manage, we don't have superpowers, so managing all of this takes time. Our free time is pretty short, but we usually put at least half of it on the developing of the app. Be patient and do not harass the team nor the telegram group.</p>
 <br />
 <br />
-<p><strong>Q - How can I uninstall the app?</strong></p>
+<p align="justify"><strong>Q - Your app killed [insert any feature here] in my phone!</strong></p>
 <br />
-<p><strong>A</strong> - First of all, <em>we are sad that you want to leave us.</em> If you <strong>didn't install the Core Mod</strong>, or it failed in any way, <em>you just need to delete the app</em> and everything is gone! If you <strong>did install successfully the Core Mod</strong>, check the WakeBlock backup folder <strong><em>(/sdcard/WakeBlock/Backups).</em></strong> You will find a bunch of different folders with different dates and times. Pick <strong>the most recent</strong> one and look inside. Here, you will have one of <strong>two cases:</strong></p>
+<p align="justify"><strong>A</strong> - Everything is done by user input, the app by itself (even with the core mod installed) doesn't do anything but reading which wakelock the system is calling. Unless you blocked something we didn't suggest you do to this problem and our app are totally unrelated.</p>
 <br />
-<p><strong>CASE 1: FILES = services.odex & and services.vdex | ODEXED ROM</strong></p>
+<br />
+<p align="justify"><strong>Q - I want to build the service.odex for my phone manually, how do I do that?</strong></p>
+<br />
+<p align="justify"><strong>A</strong> - <strong>GUIDE FOR ODEXED ROMS</strong> Easy: Download the <strong>whole sourcecode</strong> of your ROM, then copy the files you find here <a href="https://goo.gl/vg23MU">https://goo.gl/vg23MU</a> in <em>wakeblock/templates/java/services/core/java/com/</em> and place them into the sourcecode. You will deal with <em>two</em> files: <em>PowerManagerService.java</em> and <em>WakeBlockService.java</em>. For <strong>WakeBlockService.java</strong>, you just need to create the directory tree into your sourcecode <strong>corresponding to the GitHub directory tree</strong> (<em>services/core/java/com/giovannibozzano/wakeblock</em>) and place the file there, for <strong>PowerManagerService.java</strong>, you have to check inside the <em>PowerManagerService.java</em> file on GitHub for the piece of code <strong>surrounded in "WAKEBLOCK" comments</strong> and place that piece of code <strong>in the same place inside your PowerManagerService.java</strong> in <strong><em>the same place as you see in the file on GitHub</em></strong>. Then, just run the command <strong>make services</strong> in your shell of choice and you will have in your output directory <em>all the files you need!</em> (<strong>Side note:</strong> You only need <strong>service.odex and service.vdex</strong>, nothing else). Just copy the old .odex and .vdex somewhere as a backup and place the file you created in the <em>right directory</em> (<strong>/system/framework/oat/arm</strong> or <strong>/system/framework/oat/arm64</strong>, depending on your system). If it bootloops, <strong>you might have fucked up!</strong></p>
+<br />
+<br />
+<p align="justify"><strong>Q - Your app is killing my battery life! WTF!</strong></p>
+<br />
+<p align="justify"><strong>A</strong> - By itself, the app doesn't do anything even with the core mod installed. Keep WakeBlock whitelisted in every hybernation app (like greenify) but the basic Android Optimization. If the battery drain has increased, double check what you blocked, that might be the reason!</p>
+<br />
+<br />
+<p align="justify"><strong>Q - I just updated and it doesn't see the Core Mod!</strong></p>
+<br />
+<p align="justify"><strong>A</strong> - It's a known bug. Check if the app kept all permission (Both <em>root privileges</em> and <em>Storage permission</em>) and simply reboot your phone. It will magically start to see it again!</p>
+<p align="justify"><strong>Side note:</strong> you don't need to reinstall the Core Mod every time you update the app!</p>
+<br />
+<br />
+<p align="justify"><strong>Q - How can I uninstall the app?</strong></p>
+<br />
+<p align="justify"><strong>A</strong> - First of all, <em>we are sad that you want to leave us.</em> If you <strong>didn't install the Core Mod</strong>, or it failed in any way, <em>you just need to delete the app</em> and everything is gone! If you <strong>did install successfully the Core Mod</strong>, check the WakeBlock backup folder <strong><em>(/sdcard/WakeBlock/Backups).</em></strong> You will find a bunch of different folders with different dates and times. Pick <strong>the most recent</strong> one and look inside. Here, you will have one of <strong>two cases:</strong></p>
+<br />
+<p align="justify"><strong>CASE 1: FILES = services.odex & and services.vdex | ODEXED ROM</strong></p>
 In this case, <em>boot into your custom recovery of choice</em> (<strong><em>TWRP for example, you can't do it from a root explorer</em></strong>) and mount your <strong><em>/system partition</em></strong>. Now check both <strong>/system/framework/oat/arm</strong> and <strong>/system/framework/oat/arm64</strong> for a <strong><em>service.odex and a service.vdex</em></strong>. Here, <strong>COPY</strong> (and <strong><em>DO NOT MOVE</em></strong>) the files from the backup and paste them to replace the files in your system (<em>one of the two folders above</em>). Now <strong><em>delete the app</em></strong> and you're now <strong>WakeBlock-free!</strong></p>
 <br />
-<p><strong>CASE 2: FILE = services.jar | DEODEXED ROM</strong></p>
+<p align="justify"><strong>CASE 2: FILE = services.jar | DEODEXED ROM</strong></p>
 In this case, <em>boot into your custom recovery of choice</em> (<strong><em>TWRP for example, you can't do it from a root explorer</em></strong>) and mount your <strong><em>/system partition.</em></strong> Here, <strong>COPY</strong> (and <strong><em>DO NOT MOVE</em></strong>) the file from the backup and paste it to replace the file in your system (in this case <strong><em>/system/framework</em></strong>). Now <strong><em>delete the app</em></strong> and you're now <strong>WakeBlock-free!</strong></p>
 <br />
 <br />
-<p><strong>Q - YOUR APP DOESN'T WORK, WHY?</strong></p>
+<p align="justify"><strong>Q - YOUR APP DOESN'T WORK, WHY?</strong></p>
 <br />
-<p><strong>A</strong> - It works. We tested it (and we keep testing it) many times before committing an update! Double check permissons and give it a reboot, usually fixes most of the "doesn't work" problems.</p>
-<br />
-<br />
-<p><strong>Q - I found a bug! How can I report it?</strong></p>
-<br />
-<p><strong>A</strong> - First of all, check on the telegram group (<a href="https://t.me/wakeblock">https://t.me/wakeblock</a>) if anyone else had your problem, both by first searching and then asking directly. If no one can help you on the spot, send a ticket on the @WakeBlockSupportBot. It will ask for a logcat, so make sure you make one while you encounter the problem. <em>DO NOT CONTACT ANYONE OF THE TEAM UNLESS EXPLICITLY ASKED TO.</em></p>
+<p align="justify"><strong>A</strong> - It works. We tested it (and we keep testing it) many times before committing an update! Double check permissons and give it a reboot, usually fixes most of the "doesn't work" problems.</p>
 <br />
 <br />
-<p><strong>Q - How do I take a logcat?</strong></p>
+<p align="justify"><strong>Q - I found a bug! How can I report it?</strong></p>
 <br />
-<p><strong>A</strong> - First of all, make sure that you have the needed <em>Platform Tools</em> (<a href="https://goo.gl/2rgkLY">https://goo.gl/2rgkLY</a>). Due to the fact that the app reboots, it's better if you take it with a pc rathern than with an app. Plug the phone into your PC, you start the cmd.exe as administrator (or, if you use Linux, you need to open the terminal with root privileges) and run the command <em>"adb shell"</em>, now the console will show the internal console of the phone. From there, run <em>"su"</em>, a prompt will appear to your phone to ask for root permission. Approve it, then run "cd /sdcard/Download". Afterwards, run <em>"logcat >> log.txt"</em> (Nothing will appear on screen because it's redirecting every output to the log file). Now start the patch. When it gives the error (or after it reboots), close the app, click <em>"Ctrl + C"</em> to stop the logcat. Then, from the phone, send us the log.txt (you will find it in your Download folder).</p>
-<br />
-<br />
-<p><strong>Q - Wow! You guys are awesome!</strong></p>
-<br />
-<p><strong>A</strong> - Thank you!</p>
+<p align="justify"><strong>A</strong> - First of all, check on the telegram group (<a href="https://t.me/wakeblock">https://t.me/wakeblock</a>) if anyone else had your problem, both by first searching and then asking directly. If no one can help you on the spot, send a ticket on the @WakeBlockSupportBot. It will ask for a logcat, so make sure you make one while you encounter the problem. <em>DO NOT CONTACT ANYONE OF THE TEAM UNLESS EXPLICITLY ASKED TO.</em></p>
 <br />
 <br />
-<p><strong>TO-DO LIST</strong></p>
+<p align="justify"><strong>Q - How do I take a logcat?</strong></p>
 <br />
-<p>- Alarms. Yeah.</p>
-<p>- Fixing problems related to some Samsung devices and Pixel devices</p>
-<p>- Various fixes and improvements</p>
+<p align="justify"><strong>A</strong> - First of all, make sure that you have the needed <em>Platform Tools</em> (<a href="https://goo.gl/2rgkLY">https://goo.gl/2rgkLY</a>). Due to the fact that the app reboots, it's better if you take it with a pc rathern than with an app. Plug the phone into your PC, you start the cmd.exe as administrator (or, if you use Linux, you need to open the terminal with root privileges) and run the command <em>"adb shell"</em>, now the console will show the internal console of the phone. From there, run <em>"su"</em>, a prompt will appear to your phone to ask for root permission. Approve it, then run "cd /sdcard/Download". Afterwards, run <em>"logcat >> log.txt"</em> (Nothing will appear on screen because it's redirecting every output to the log file). Now start the patch. When it gives the error (or after it reboots), close the app, click <em>"Ctrl + C"</em> to stop the logcat. Then, from the phone, send us the log.txt (you will find it in your Download folder).</p>
+<br />
+<br />
+<p align="justify"><strong>Q - Wow! You guys are awesome!</strong></p>
+<br />
+<p align="justify"><strong>A</strong> - Thank you!</p>
+<br />
+<br />
+<p align="justify"><strong>TO-DO LIST</strong></p>
+<br />
+<p align="justify">- Alarms. Yeah.</p>
+<p align="justify">- Fixing problems related to some Samsung devices and Pixel devices</p>
+<p align="justify">- Various fixes and improvements</p>
