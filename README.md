@@ -21,6 +21,10 @@
 
 **A** - If it is part of the list linked above, you're good to go! If not, we can't assure a thing, but if you find any safe-to-block wakelock let us know!
 
+**Q - Your app is great: How can i donate to you guys?**
+
+**A** - First, thank you! Second, we have a Patreon set up! Here's the link! https://www.patreon.com/wakeblock
+
 **Q - When is the new version/fix/graphic coming?**
 
 **A** - _Do not ask for an ETA._ We do this for free, without any ads in the app nor donation packages, we don't even put a price on our app. We all have jobs, university and a private life to manage, we don't have superpowers, so managing all of this takes time. Our free time is pretty short, but we usually put at least half of it on the developing of the app. Be patient and do not harass the team nor the Telegram group.
@@ -62,10 +66,6 @@ In this case, *boot into your custom recovery of choice* (***TWRP for example, y
 **Q - How do i take a logcat?**
 
 **A** - First of all, make sure that you have the needed _Platform Tools_ (https://goo.gl/2rgkLY). Due to the fact that the app reboots, it's better if you take it with a pc rathern than with an app. Plug the phone into your PC, you start the cmd.exe as administrator (or, if you use Linux, you need to open the terminal with root privileges) and run the command _"adb shell"_, now the console will show the internal console of the phone. From there, run _"su"_, a prompt will appear to your phone to ask for root permission. Approve it, then run "cd /sdcard/Download". Afterwards, run _"logcat >> log.txt"_ (Nothing will appear on screen because it's redirecting every output to the log file). Now start the patch. When it gives the error (or after it reboots), close the app, click _"Ctrl + C"_ to stop the logcat. Then, from the phone, send us the log.txt (you will find it in your Download folder).
-
-**Q - Wow! You guys are awesome!**
-
-**A** - Thank you!
 
 ## TO-DO LIST
 - Alarms. Yeah.
