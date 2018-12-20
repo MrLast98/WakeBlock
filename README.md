@@ -3,7 +3,7 @@
 
 **Q - How do i use wakeblock?**
 
-**A** - Once you have installed the app, just open it and click on "Install Core Mod", the app will create the Core Mod needed for your device (this might take a while, from 5 to 30 minutes) and then will reboot the phone to flash it. When the phone has rebooted, open the app: If the message says "Service Bound" you're all set!
+**A** - Once you have installed the app, just open it and click on "Install Core Mod". Choose your flash type off the list (Automatic = Flashed once the zip file is created, Manual = Manually reboot to recovery and flash the flash-me.zip in the WakeBlock folder, Magisk = Manually open the Magisk app and flash the wakeblock-magisk.zip inside the WakeBlock folder) and flash it! **Side Note:** There is no difference in the patch itself between the different flashing method. The generic course of action is to use the Automatic or the Magisk flash. If those fails, try the Manual one.
 
 **Q - How can i block wakelocks?**
 
@@ -15,7 +15,7 @@
 
 **Q - I'm lazy af and i don't want to read all of that, can't you give me a short list?**
 
-**A** - Ok, but we don't take any responsibilities if the phone bricks or your ROM explodes. You are totally free to change the blocking time value to make it as you please but, again, we don't take any responsibilities. You can find the list here: https://goo.gl/xAE8ny **Remember:** if you don't find one of the wakelocks, just check in later. If you still don't find it, don't worry at all! **Side note:** the search button is _not_ case-sensitive.
+**A** - Ok, but we don't take any responsibilities if the phone bricks or your ROM explodes. You are totally free to change the blocking time value to make it as you please but, again, we don't take any responsibilities. You can find the list here: https://goo.gl/xAE8ny **Remember:** if you don't find one of the wakelocks, just check in later. If you still don't find it, don't worry at all! **Side Note:** the search button is _not_ case-sensitive.
 
 **Q - Can i block the [wakelock name] wakelock?**
 
@@ -23,7 +23,7 @@
 
 **Q - When is the new version/fix/graphic coming?**
 
-**A** - _Do not ask for an ETA._ We do this for free, without any ads in the app nor donation packages, we don't even put a price on our app. We all have jobs, university and a private life to manage, we don't have superpowers, so managing all of this takes time. Our free time is pretty short, but we usually put at least half of it on the developing of the app. Be patient and do not harass the team nor the telegram group.
+**A** - _Do not ask for an ETA._ We do this for free, without any ads in the app nor donation packages, we don't even put a price on our app. We all have jobs, university and a private life to manage, we don't have superpowers, so managing all of this takes time. Our free time is pretty short, but we usually put at least half of it on the developing of the app. Be patient and do not harass the team nor the Telegram group.
 
 **Q - Your app killed [insert any feature here] in my phone!**
 
@@ -39,7 +39,7 @@
 
 **Q - I just updated and it doesn't see the Core Mod!**
 
-**A** - It's a known bug. Check if the app kept all permission (Both _root privileges_ and _Storage permission_) and simply reboot your phone. It will magically start to see it again! **SIDE NOTE:** you don't need to reinstall the Core Mod every time you update the app!
+**A** - It's a known bug. Check if the app kept all permission (Both _Root privileges_ and _Storage permission_) and simply reboot your phone. It will magically start to see it again! **SIDE NOTE:** you don't need to reinstall the Core Mod every time you update the app!
 
 **Q - How can i uninstall the app?**
 
@@ -57,7 +57,7 @@ In this case, *boot into your custom recovery of choice* (***TWRP for example, y
 
 **Q - I found a bug! How can i report it?**
 
-**A** - First of all, check on the telegram group (https://t.me/wakeblock) if anyone else had your problem, both by first searching and then asking directly. If no one can help you on the spot, send a ticket on the @WakeBlockSupportBot. It will ask for a logcat, so make sure you make one while you encounter the problem. _DO NOT CONTACT ANYONE OF THE TEAM UNLESS EXPLICITLY ASKED TO._
+**A** - First of all, check on the telegram group (https://t.me/wakeblock) if anyone else had your problem, both by first searching and then asking directly. It will ask for a logcat, so make sure you make one while you encounter the problem. _DO NOT CONTACT ANYONE OF THE TEAM UNLESS EXPLICITLY ASKED TO._
 
 **Q - How do i take a logcat?**
 
@@ -69,5 +69,6 @@ In this case, *boot into your custom recovery of choice* (***TWRP for example, y
 
 ## TO-DO LIST
 - Alarms. Yeah.
-- Fixing problems related to some Samsung devices and Pixel devices
+- Flags for extensive debug messages vs a phase based message
+- Kernel Wakelocks? Maybe?
 - Various fixes and improvements
