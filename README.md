@@ -25,6 +25,10 @@
 
 **A** - First, thank you! Second, we have a Patreon set up! Here's the link! https://www.patreon.com/wakeblock
 
+**Q - I installed the Magisk Module and everything exploded! How can i remove it?**
+
+**A** - If you phone bootloops (it\'s HIGHLY UNLIKELY, but we stil love your device) simply create a file in your /system (or /system/system for A/B devices) called "disable.module" and the module will be automagically removed! After the removal, you MUST remove the disable.module file by yourself [Temporary]
+
 **Q - When is the new version/fix/graphic coming?**
 
 **A** - _Do not ask for an ETA._ We do this for free, without any ads in the app nor donation packages, we don't even put a price on our app. We all have jobs, university and a private life to manage, we don't have superpowers, so managing all of this takes time. Our free time is pretty short, but we usually put at least half of it on the developing of the app. Be patient and do not harass the team nor the Telegram group.
