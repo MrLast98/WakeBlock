@@ -7,6 +7,8 @@
 
 **Icing** ~ _3 600 000 ms_
 
+**kxr** ~ _0 ms_
+
 **LocationManagerService** ~ _900 000 ms_
 
 **NetworkStats** ~ _900 000 ms_
@@ -24,6 +26,10 @@
 **UlrDispSvcFastWL** ~ _900 000 ms_
 
 **ULR_BarometerReading_WakeLock** ~ _900 000 ms_
+
+**Unity-ProjectRequestedWakeLock** ~ _900 000 ms_
+
+
 
 **Wakeful StateMachine: GeofencerStateMachine** ~ _900 000 ms_
 
