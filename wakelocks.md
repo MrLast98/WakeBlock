@@ -22,7 +22,7 @@
 
 **DozeService** ~ _Disable_ **[Warning] Not Recommended unless you know what you do**
 
-**DreamManagerService** ~ _900 000 ms_
+**DreamManagerService** ~ _900 000 ms_ **[Warning] Might break Fingerprint Unlock**
 
 **fn** ~ _9 000 000 ms_
 
