@@ -86,7 +86,7 @@
 
 **\*job\*/com.instagram.android/com.facebook.browser.lite.BrowserLiteIntentService** ~ _16 200 000 ms_
 
-**\*job*/com.miui.player/com.evernote.android.job.JobRescheduleService** ~ _21 600 000 ms_
+**\*job\*/com.miui.player/com.evernote.android.job.JobRescheduleService** ~ _21 600 000 ms_
 
 **\*job\*/com.pure.indosat.care/com.qiscus.sdk.chat.core.service.QiscusNetworkCheckerJobService** ~ _Disable_
 
