@@ -62,7 +62,7 @@
 
 **\*job\*/com.facebook.orca/com.facebook.conditionalworker.ConditionalWorkerService** ~ _Disable_
 
-**\*job*/com.facebook.orca/com.facebook.conditionalworker.LollipopConditionalWorkerService** ~ _Disable_
+**\*job\*/com.facebook.orca/com.facebook.conditionalworker.LollipopConditionalWorkerService** ~ _Disable_
 
 **\*job\*/com.facebook.orca/com.facebook.googleplay.GooglePlayInstallRefererService** ~ _Disable_
 
