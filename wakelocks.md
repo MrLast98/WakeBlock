@@ -96,7 +96,7 @@
   
 **\*job\*/com.tokopedia.tkpd/com.moengage.core.DataSyncJob** ~ _Disable_
 
-***job*/net.oneplus.odm/.insight.MDMJobService** ~ _21 600 000 ms_
+**\*job\*/net.oneplus.odm/.insight.MDMJobService** ~ _21 600 000 ms_
 
 **JobExecutor** ~ _10 800 000 ms_
 
