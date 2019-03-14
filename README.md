@@ -15,7 +15,7 @@
 
 **Q - I'm lazy af and i don't want to read all of that, can't you give me a short list?**
 
-**A** - Ok, but we don't take any responsibilities if the phone bricks or your ROM explodes. You are totally free to change the blocking time value to make it as you please but, again, we don't take any responsibilities. You can find the list here: https://goo.gl/xAE8ny **Remember:** if you don't find one of the wakelocks, just check in later. If you still don't find it, don't worry at all! **Side Note:** the search button is _not_ case-sensitive.
+**A** - Ok, but we don't take any responsibilities if the phone bricks or your ROM explodes. You are totally free to change the blocking time value to make it as you please but, again, we don't take any responsibilities. You can find the list here: https://github.com/MrLast98/WakeBlock/blob/master/wakelocks.md **Remember:** if you don't find one of the wakelocks, just check in later. If you still don't find it, don't worry at all! **Side Note:** the search button is _not_ case-sensitive.
 
 **Q - Can i block the [wakelock name] wakelock?**
 
