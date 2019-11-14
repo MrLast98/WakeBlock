@@ -16,7 +16,7 @@
 
 **Q - I'm lazy af and I don't want to read all of that, can't you give me a short list?**
 
-**A** - Ok, but we don't take any responsibilities if the phone bricks or your ROM explodes. You are totally free to change the blocking time value to make it as you please but, again, we don't take any responsibilities. You can find the list here: https://github.com/MrLast98/WakeBlock/blob/master/wakelocks.md
+**A** - Ok, but we don't take any responsibilities if the device bricks or your ROM explodes. You are totally free to change the blocking time value to make it as you please but, again, we don't take any responsibilities. You can find the list here: https://github.com/MrLast98/WakeBlock/blob/master/wakelocks.md
 **Remember:** if you don't find one of the wakelocks, just check in later. If you still don't find it, don't worry at all!
 **Side Note:** the search button is _not_ case-sensitive.
 
@@ -30,17 +30,17 @@
 
 **Q - I installed the Magisk Module and everything exploded! How can I remove it?**
 
-**A** - If you phone bootloops (it\'s HIGHLY UNLIKELY, but we stil love your device) simply create a file in your /system (or /system/system for A/B devices) called "disable.module" and the module will be automagically removed! After the removal, you MUST remove the disable.module file by yourself [Temporary]
+**A** - If you device bootloops (it\'s HIGHLY UNLIKELY, but we stil love your device) simply create a file in your /system (or /system/system for A/B devices) called "disable.module" and the module will be automagically removed! After the removal, you MUST remove the disable.module file by yourself [Temporary]
 
 **Q - When is the new version/fix/graphic coming?**
 
 **A** - _Do not ask for an ETA._ We do this for free, without any ads in the app nor donation packages, we don't even put a price on our app. We all have jobs, university and a private life to manage, we don't have superpowers, so managing all of this takes time. Our free time is pretty short, but we usually put at least half of it on the developing of the app. Be patient and do not harass the team nor the Telegram group.
 
-**Q - Your app killed [insert any feature here] in my phone!**
+**Q - Your app killed [insert any feature here] in my device!**
 
 **A** - Everything is done by user input, the app by itself (even with the core mod installed) doesn't do anything but reading which wakelock the system is calling. Unless you blocked something we didn't suggest you do to this problem and our app are totally unrelated.
 
-**Q - I want to build the service.odex for my phone manually, how do i do that?**
+**Q - I want to build the service.odex for my device manually, how do i do that?**
 
 **A** - **GUIDE FOR ODEXED ROMS** Easy: Download the **whole sourcecode** of your ROM, then copy the files you find here https://goo.gl/vg23MU in _wakeblock/templates/java/services/core/java/com/_ and place them into the sourcecode. You will deal with _two_ files: *PowerManagerService.java* and *WakeBlockService.java*. For **WakeBlockService.java**, you just need to create the directory tree into your sourcecode **corresponding to the GitHub directory tree** (_services/core/java/com/giovannibozzano/wakeblock_) and place the file there, for **PowerManagerService.java**, you have to check inside the *PowerManagerService.java* file on GitHub for the piece of code **surrounded in "WAKEBLOCK" comments** and place that piece of code **in the same place inside your PowerManagerService.java** in ***the same place as you see in the file on GitHub***. Then, just run the command **make services** in your shell of choice and you will have in your output directory *all the files you need!* (**SIDE NOTE:** You only need **service.odex and service.vdex**, nothing else). Just copy the old .odex and .vdex somewhere as a backup and place the file you created in the *right directory* (**/system/framework/oat/arm** or **/system/framework/oat/arm64**, depending on your system). If it bootloops, **you might have fucked up!**
 
@@ -66,7 +66,7 @@
 
 **Q - How do I take a logcat?**
 
-**A** - First of all, make sure that you have the needed _Platform Tools_ (https://goo.gl/2rgkLY). Due to the fact that the app reboots, it's better if you take it with a pc rathern than with an app. Plug the phone into your PC, you start the cmd.exe as administrator (or, if you use Linux, you need to open the terminal with root privileges) and run the command _"adb shell"_, now the console will show the internal console of the phone. From there, run _"su"_, a prompt will appear to your phone to ask for root permission. Approve it, then run "cd /sdcard/Download". Afterwards, run _"logcat >> log.txt"_ (Nothing will appear on screen because it's redirecting every output to the log file). Now start the patch. When it gives the error (or after it reboots), close the app, click _"Ctrl + C"_ to stop the logcat. Then, from the phone, send us the log.txt (you will find it in your Download folder).
+**A** - First of all, make sure that you have the needed _Platform Tools_ (https://goo.gl/2rgkLY). Due to the fact that the app reboots, it's better if you take it with a pc rathern than with an app. Plug the device into your PC, you start the cmd.exe as administrator (or, if you use Linux, you need to open the terminal with root privileges) and run the command _"adb shell"_, now the console will show the internal console of the device. From there, run _"su"_, a prompt will appear to your device to ask for root permission. Approve it, then run "cd /sdcard/Download". Afterwards, run _"logcat >> log.txt"_ (Nothing will appear on screen because it's redirecting every output to the log file). Now start the patch. When it gives the error (or after it reboots), close the app, click _"Ctrl + C"_ to stop the logcat. Then, from the device, send us the log.txt (you will find it in your Download folder).
 
 ## TO-DO LIST
 - Alarms. Yeah.
