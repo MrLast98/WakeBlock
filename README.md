@@ -3,7 +3,8 @@
 
 **Q - How do I use WakeBlock?**
 
-**A** - Once you have installed the app, just open it and click on "Install Core Mod". Choose your flash type off the list (Automatic = Flashed once the zip file is created, Manual = Manually reboot to recovery and flash the flash-me.zip in the WakeBlock folder, Magisk = Manually open the Magisk app and flash the wakeblock-magisk.zip inside the WakeBlock folder) and flash it! **Side Note:** There is no difference in the patch itself between the different flashing method. The generic course of action is to use the Automatic or the Magisk flash. If those fails, try the Manual one.
+**A** - Once you have installed the app, just open it and click on "Install Core Mod". Choose your flash type off the list (Automatic = Flashed once the zip file is created, Manual = Manually reboot to recovery and flash the flash-me.zip in the WakeBlock folder, Magisk = Manually open the Magisk app and flash the wakeblock-magisk.zip inside the WakeBlock folder) and flash it!
+**Side Note:** There is no difference in the patch itself between the different flashing method. The generic course of action is to use the Automatic or the Magisk flash. If those fails, try the Manual one.
 
 **Q - How can I block wakelocks?**
 
@@ -15,7 +16,9 @@
 
 **Q - I'm lazy af and I don't want to read all of that, can't you give me a short list?**
 
-**A** - Ok, but we don't take any responsibilities if the phone bricks or your ROM explodes. You are totally free to change the blocking time value to make it as you please but, again, we don't take any responsibilities. You can find the list here: https://github.com/MrLast98/WakeBlock/blob/master/wakelocks.md **Remember:** if you don't find one of the wakelocks, just check in later. If you still don't find it, don't worry at all! **Side Note:** the search button is _not_ case-sensitive.
+**A** - Ok, but we don't take any responsibilities if the phone bricks or your ROM explodes. You are totally free to change the blocking time value to make it as you please but, again, we don't take any responsibilities. You can find the list here: https://github.com/MrLast98/WakeBlock/blob/master/wakelocks.md
+**Remember:** if you don't find one of the wakelocks, just check in later. If you still don't find it, don't worry at all!
+**Side Note:** the search button is _not_ case-sensitive.
 
 **Q - Can I block the [wakelock name] wakelock?**
 
@@ -44,10 +47,6 @@
 **Q - Your app is killing my battery life! WTF!**
 
 **A** - By itself, the app doesn't do anything even with the core mod installed. Keep WakeBlock whitelisted in every hybernation app (like greenify) but the basic Android Optimization. If the battery drain has increased, double check what you blocked, that might be the reason!
-
-**Q - I just updated and it doesn't see the Core Mod!**
-
-**A** - It's a known bug. Check if the app kept all permission (Both _Root privileges_ and _Storage permission_) and simply reboot your phone. It will magically start to see it again! **SIDE NOTE:** you don't need to reinstall the Core Mod every time you update the app!
 
 **Q - How can I MANUALLY uninstall the app/coremod?**
 
