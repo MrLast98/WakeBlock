@@ -52,9 +52,9 @@
 
 **A** - First of all, *we are sad that you want to leave us.* If you **didn't install the Core Mod**, or it failed in any way, *you just need to delete the app* and everything is gone! If you **did install successfully the Core Mod**, check the WakeBlock backup folder ***(/sdcard/WakeBlock/Backups).*** Here, you will have one of **two cases:**
 
-1. If you flashed the file using the **"Automatic"** or **"Manual"** option, you will find different folders with a backup inside them in /sdcard/WakeBlock/Bakups, *they are taken every time you patch and won't be deleted unless you manually delete it*, just **flash the zip file inside the folder with the most recent date and you're good to go**
+1. If you flashed the file using the **"Automatic"** or **"Manual"** option, you will find different folders with a backup inside them in /sdcard/WakeBlock/Bakups, *they are taken every time you patch and won't be deleted unless you manually delete it*, just **flash the zip file inside the folder with the most recent date and you're good to go**.
 
-2. If you went for the **"Magisk Module"**, simply *create a file in your /system (or /system/system for A/B devices) called* ***"disable.module"*** and the module will be automagically **removed!** After the removal, you *MUST remove the disable.module file by yourself*
+2. If you went for the **"Magisk Module"**, simply *create a file in your /system (or /system/system for A/B devices) called* ***"disable.module"*** and the module will be automagically **removed!** After the removal, you *MUST remove the disable.module file by yourself*.
 
 **Q - YOUR APP DOESN'T WORK, WHY?**
 
