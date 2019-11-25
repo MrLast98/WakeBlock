@@ -1,89 +1,71 @@
 <p><big><strong>Here you can find the most common questions and their respective answer. Simple as that. READ THEM.</strong></big></p>
 <br />
 <br />
-<p><strong>Q - How do I use WakeBlock?</strong></p>
-<br />
-<p><strong>A</strong> - Once you have installed the app, just open it and click on "Install Core Mod". Choose your flash type off the list (Automatic = Flashed once the zip file is created, Manual = Manually reboot to recovery and flash the flash-me.zip in the WakeBlock folder, Magisk = Manually open the Magisk app and flash the wakeblock-magisk.zip inside the WakeBlock folder) and flash it!</p>
-<p><strong>Side Note:</strong> There is no difference in the patch itself between the different flashing method. The generic course of action is to use the Automatic or the Magisk flash. If those fails, try the Manual one.</p>
-<br />
-<br />
-<p><strong>Q - How can I block wakelocks?</strong></p>
-<br />
-<p><strong>A</strong> - From within the app, just switch to the "Wakelock" tab. Here every wakelock recorded since the first boot with the core mod installed, so give it at least 2/3 days of normal use before blocking anything. Click on the wakelock you want to block, press the "Block" button and then set for how long is the wakelock gonna be blocked!</p>
-<br />
-<br />
-<p><strong>Q - Which wakelock should I block? For how long?</strong></p>
-<br />
-<p><strong>A</strong> - We suggest to check out this guide on XDA (<a href="https://goo.gl/PFAPJ2">https://goo.gl/PFAPJ2</a>) to fully understand what it means to block a wakelocks and how it affects your system.</p>
-<br />
-<br />
-<p><strong>Q - I'm lazy af and I don't want to read all of that, can't you give me a short list?</strong></p>
-<br />
-<p><strong>A</strong> - Ok, but we don't take any responsibilities if the device bricks or your ROM explodes. You are totally free to change the blocking time value to make it as you please but, again, we don't take any responsibilities. You can find the list here: <a href="https://github.com/MrLast98/WakeBlock/blob/master/wakelocks.md">https://github.com/MrLast98/WakeBlock/blob/master/wakelocks.md</a></p>
-<p><strong>Remember:</strong> If you don't find one of the wakelocks, just check in later. If you still don't find it, don't worry at all!</p>
-<p><strong>Side Note:</strong> The search button is not case-sensitive.</p>
-<br />
-<br />
-<p><strong>Q - Can I block the [wakelock name] wakelock?</strong></p>
-<br />
-<p><strong>A</strong> - If it is part of the list linked above, you're good to go! If not, we can't assure a thing, but if you find any safe-to-block wakelock let us know!</p>
-<br />
-<br />
-<p><strong>Q - Your app is great: How can I donate to you guys?</strong></p>
-<br />
-<p><strong>A</strong> - First, thank you! Second, we have a Patreon set up! Here's the link! <a href="https://www.patreon.com/wakeblock">https://www.patreon.com/wakeblock</a></p>
-<br />
-<br />
-<p><strong>Q - I installed the Magisk Module and everything exploded! How can I remove it?</strong></p>
-<br />
-<p><strong>A</strong> - If you device bootloops (it's HIGHLY UNLIKELY, but we stil love your device) simply create a file in your /system (or /system/system for A/B devices) called "disable.module" and the module will be automagically removed! After the removal, you MUST remove the disable.module file by yourself [Temporary]</p>
-<br />
-<br />
-<p><strong>Q - When is the new version/fix/graphic coming?</strong></p>
-<br />
-<p><strong>A</strong> - <em>Do not ask for an ETA.</em> We do this for free, without any ads in the app nor donation packages, we don't even put a price on our app. We all have jobs, university and a private life to manage, we don't have superpowers, so managing all of this takes time. Our free time is pretty short, but we usually put at least half of it on the developing of the app. Be patient and do not harass the team nor the Telegram group.</p>
-<br />
-<br />
-<p><strong>Q - Your app killed [insert any feature here] in my device!</strong></p>
-<br />
-<p><strong>A</strong> - Everything is done by user input, the app by itself (even with the core mod installed) doesn't do anything but reading which wakelock the system is calling. Unless you blocked something we didn't suggest you do to this problem and our app are totally unrelated.</p>
-<br />
-<br />
-<p><strong>Q - I want to build the service.odex for my device manually, how do I do that?</strong></p>
-<br />
-<p><strong>A</strong> - <strong>GUIDE FOR ODEXED ROMS</strong> Easy: Download the <strong>whole sourcecode</strong> of your ROM, then copy the files you find here <a href="https://goo.gl/vg23MU">https://goo.gl/vg23MU</a> in <em>wakeblock/templates/java/services/core/java/com/</em> and place them into the sourcecode. You will deal with <em>two</em> files: <em>PowerManagerService.java</em> and <em>WakeBlockService.java</em>. For <strong>WakeBlockService.java</strong>, you just need to create the directory tree into your sourcecode <strong>corresponding to the GitHub directory tree</strong> (<em>services/core/java/com/giovannibozzano/wakeblock</em>) and place the file there, for <strong>PowerManagerService.java</strong>, you have to check inside the <em>PowerManagerService.java</em> file on GitHub for the piece of code <strong>surrounded in "WAKEBLOCK" comments</strong> and place that piece of code <strong>in the same place inside your PowerManagerService.java</strong> in <strong><em>the same place as you see in the file on GitHub</em></strong>. Then, just run the command <strong>make services</strong> in your shell of choice and you will have in your output directory <em>all the files you need!</em> (<strong>Side note:</strong> You only need <strong>service.odex and service.vdex</strong>, nothing else). Just copy the old .odex and .vdex somewhere as a backup and place the file you created in the <em>right directory</em> (<strong>/system/framework/oat/arm</strong> or <strong>/system/framework/oat/arm64</strong>, depending on your system). If it bootloops, <strong>you might have fucked up!</strong></p>
-<br />
-<br />
-<p><strong>Q - Your app is killing my battery life! WTF!</strong></p>
-<br />
-<p><strong>A</strong> - By itself, the app doesn't do anything even with the core mod installed. Keep WakeBlock whitelisted in every hybernation app (like greenify) but the basic Android Optimization. If the battery drain has increased, double check what you blocked, that might be the reason!</p>
-<br />
-<br />
-<p><strong>Q - How can I MANUALLY uninstall the app/coremod?</strong></p>
-<br />
-<p><strong>A</strong> - First of all, <em>we are sad that you want to leave us.</em> If you <strong>didn't install the Core Mod</strong>, or it failed in any way, <em>you just need to delete the app</em> and everything is gone! If you <strong>did install successfully the Core Mod</strong>, check the WakeBlock backup folder <strong><em>(/sdcard/WakeBlock/Backups)</em></strong>. Here, you will have one of <strong>two cases</strong>:</p>
-<p>1 - If you flashed the file using the <strong>"Automatic"</strong> or <strong>"Manual"</strong> option, you will find different folders with a backup inside them in /sdcard/WakeBlock/Bakups, <em>they are taken every time you patch and won't be deleted unless you manually delete it</em>, just <strong>flash the zip file inside the folder with the most recent date and you're good to go</strong>.</p>
-<p>2 - If you went for the <strong>"Magisk Module"</strong>, simply create a file in your /system (or /system/system for A/B devices) called <strong>"disable.module"</strong> and the module will be automagically removed! After the removal, you <em>MUST remove the disable.module file by yourself</em>.</p>
-<br />
-<br />
-<p><strong>Q - YOUR APP DOESN'T WORK, WHY?</strong></p>
-<br />
-<p><strong>A</strong> - It works. We tested it (and we keep testing it) many times before committing an update! Double check permissons and give it a reboot, usually fixes most of the "doesn't work" problems.</p>
-<br />
-<br />
-<p><strong>Q - I found a bug! How can I report it?</strong></p>
-<br />
-<p><strong>A</strong> - First of all, check on the Telegram group (<a href="https://t.me/wakeblock">https://t.me/wakeblock</a>) if anyone else had your problem, both by first searching and then asking directly. If no one can help you on the spot, send a ticket on the @WakeBlockSupportBot. It will ask for a logcat, so make sure you make one while you encounter the problem. <em>DO NOT CONTACT ANYONE OF THE TEAM UNLESS EXPLICITLY ASKED TO.</em></p>
-<br />
-<br />
-<p><strong>Q - How do I take a logcat?</strong></p>
-<br />
-<p><strong>A</strong> - First of all, make sure that you have the needed <em>Platform Tools</em> (<a href="https://goo.gl/2rgkLY">https://goo.gl/2rgkLY</a>). Due to the fact that the app reboots, it's better if you take it with a pc rathern than with an app. Plug the device into your PC, you start the cmd.exe as administrator (or, if you use Linux, you need to open the terminal with root privileges) and run the command <em>"adb shell"</em>, now the console will show the internal console of the device. From there, run <em>"su"</em>, a prompt will appear to your device to ask for root permission. Approve it, then run "cd /sdcard/Download". Afterwards, run <em>"logcat >> log.txt"</em> (Nothing will appear on screen because it's redirecting every output to the log file). Now start the patch. When it gives the error (or after it reboots), close the app, click <em>"Ctrl + C"</em> to stop the logcat. Then, from the device, send us the log.txt (you will find it in your Download folder).</p>
-<br />
-<br />
-<p><strong>TO-DO LIST</strong></p>
-<br />
-<p>- Alarms. Yeah.</p>
-<p>- Flags for extensive debug messages vs a phase based message</p>
-<p>- Kernel Wakelocks? Maybe?</p>
-<p>- Various fixes and improvements</p>
+<p><strong>Q - How do I use WakeBlock?</p></strong>
+
+<p><strong>A</p></strong> - Once you have installed the app, just open it and click on "Install Core Mod". Choose your flash type off the list (Automatic = Flashed once the zip file is created, Manual = Manually reboot to recovery and flash the flash-me.zip in the WakeBlock folder, Magisk = Manually open the Magisk app and flash the wakeblock-magisk.zip inside the WakeBlock folder) and flash it!
+<p><strong>Side Note:</p></strong> There is no difference in the patch itself between the different flashing method. The generic course of action is to use the Automatic or the Magisk flash. If those fails, try the Manual one.
+
+<p><strong>Q - How can I block wakelocks?</p></strong>
+
+<p><strong>A</p></strong> - From within the app, just switch to the "Wakelock" tab. Here every wakelock recorded since the first boot with the core mod installed, so give it at least 2/3 days of normal use before blocking anything. Click on the wakelock you want to block, press the "Block" button and then set for how long is the wakelock gonna be blocked!
+
+<p><strong>Q - Which wakelock should I block? For how long?</p></strong>
+
+<p><strong>A</p></strong> - We suggest to check out this guide on XDA (https://goo.gl/PFAPJ2) to fully understand what it means to block a wakelocks and how it affects your system. 
+
+<p><strong>Q - I'm lazy af and I don't want to read all of that, can't you give me a short list?</p></strong>
+
+<p><strong>A</p></strong> - Ok, but we don't take any responsibilities if the device bricks or your ROM explodes. You are totally free to change the blocking time value to make it as you please but, again, we don't take any responsibilities. You can find the list here: https://github.com/MrLast98/WakeBlock/blob/master/wakelocks.md
+<p><strong>Remember:</p></strong> if you don't find one of the wakelocks, just check in later. If you still don't find it, don't worry at all!
+<p><strong>Side Note:</p></strong> the search button is <em>not<em> case-sensitive.
+
+<p><strong>Q - Can I block the [wakelock name] wakelock?</p></strong>
+
+<p><strong>A<p/></strong> - If it is part of the list linked above, you're good to go! If not, we can't assure a thing, but if you find any safe-to-block wakelock let us know!
+
+<p><strong>Q - Your app is great: How can I donate to you guys?</p></strong>
+
+<p><strong>A</p></strong> - First, thank you! Second, we have a Patreon set up! Here's the link! https://www.patreon.com/wakeblock
+
+<p><strong>Q - I installed the Magisk Module and everything exploded! How can I remove it?</p></strong>
+
+<p><strong>A</p></strong> - If you device bootloops (it\'s HIGHLY UNLIKELY, but we stil love your device) simply create a file in your /system (or /system/system for A/B devices) called "disable.module" and the module will be automagically removed! After the removal, you MUST remove the disable.module file by yourself [Temporary]
+
+<p><strong>Q - When is the new version/fix/graphic coming?</p></strong>
+
+<p><strong>A</p></strong> - <em>Do not ask for an ETA.</em> We do this for free, without any ads in the app nor donation packages, we don't even put a price on our app. We all have jobs, university and a private life to manage, we don't have superpowers, so managing all of this takes time. Our free time is pretty short, but we usually put at least half of it on the developing of the app. Be patient and do not harass the team nor the Telegram group.
+
+<p><strong>Q - Your app killed [insert any feature here] in my device!</p></strong>
+
+<p><strong>A</p></strong> - Everything is done by user input, the app by itself (even with the core mod installed) doesn't do anything but reading which wakelock the system is calling. Unless you blocked something we didn't suggest you do to this problem and our app are totally unrelated.
+
+<p><strong>Q - I want to build the service.odex for my device manually, how do i do that?</p></strong>
+
+<p><strong>A</p></strong> - <p><strong>GUIDE FOR ODEXED ROMS</p></strong> Easy: Download the <p><strong>whole sourcecode</p></strong> of your ROM, then copy the files you find here https://goo.gl/vg23MU in <em>wakeblock/templates/java/services/core/java/com/</em> and place them into the sourcecode. You will deal with <em>two</em> files: *PowerManagerService.java* and *WakeBlockService.java*. For <p><strong>WakeBlockService.java</p></strong>, you just need to create the directory tree into your sourcecode <p><strong>corresponding to the GitHub directory tree</p></strong> (<em>services/core/java/com/giovannibozzano/wakeblock<em>) and place the file there, for <p><strong>PowerManagerService.java</p></strong>, you have to check inside the *PowerManagerService.java* file on GitHub for the piece of code <p><strong>surrounded in "WAKEBLOCK" comments</p></strong> and place that piece of code <p><strong>in the same place inside your PowerManagerService.java</p></strong> in <p><strong>*the same place as you see in the file on GitHub</p><strong>*. Then, just run the command <p><strong>make services</p></strong> in your shell of choice and you will have in your output directory *all the files you need!* (<p><strong>SIDE NOTE:</p></strong> You only need <p><strong>service.odex and service.vdex</p></strong>, nothing else). Just copy the old .odex and .vdex somewhere as a backup and place the file you created in the *right directory* (<p><strong>/system/framework/oat/arm</p></strong> or <p><strong>/system/framework/oat/arm64</p></strong>, depending on your system). If it bootloops, <p><strong>you might have fucked up!</p></strong>
+
+<p><strong>Q - Your app is killing my battery life! WTF!</p></strong>
+
+<p><strong>A</p></strong> - By itself, the app doesn't do anything even with the core mod installed. Keep WakeBlock whitelisted in every hybernation app (like greenify) but the basic Android Optimization. If the battery drain has increased, double check what you blocked, that might be the reason!
+
+<p><strong>Q - How can I MANUALLY uninstall the app/coremod?</p></strong>
+
+<p><strong>A</p></strong> - First of all, *we are sad that you want to leave us.* If you <p><strong>didn't install the Core Mod</p></strong>, or it failed in any way, *you just need to delete the app* and everything is gone! If you <p><strong>did install successfully the Core Mod</p></strong>, check the WakeBlock backup folder <p><strong>*(/sdcard/WakeBlock/Backups).</p></strong>* Here, you will have one of <p><strong>two cases:</p></strong>
+
+1. If you flashed the file using the <p><strong>"Automatic"</p></strong> or <p><strong>"Manual"</p></strong> option, you will find different folders with a backup inside them in /sdcard/WakeBlock/Bakups, <p><strong>they are taken every time you patch and won't be deleted unless you manually delete it</p></strong>, just <p><strong>flash the zip file inside the folder with the most recent date and you're good to go</p></strong>.
+
+2. If you went for the <p><strong>"Magisk Module"</p></strong>, simply create a file in your /system (or /system/system for A/B devices) called <p><strong>"disable.module"<p><strong> and the module will be automagically removed! After the removal, you *MUST remove the disable.module file by yourself*.
+
+<p><strong>Q - YOUR APP DOESN'T WORK, WHY?</p></strong>
+
+<p><strong>A</p></strong> - It works. We tested it (and we keep testing it) many times before committing an update! Double check permissons and give it a reboot, usually fixes most of the "doesn't work" problems.
+
+<p><strong>Q - I found a bug! How can I report it?</p></strong>
+
+<p><strong>A</p></strong> - First of all, check on the telegram group (https://t.me/wakeblock) if anyone else had your problem, both by first searching and then asking directly. If no one can help you on the spot, send a ticket on the @WakeBlockSupportBot. It will ask for a logcat, so make sure you make one while you encounter the problem. <em>DO NOT CONTACT ANYONE OF THE TEAM UNLESS EXPLICITLY ASKED TO.<em>
+
+<p><strong>Q - How do I take a logcat</p><?strong>
+
+<p><strong>A</p></strong> - First of all, make sure that you have the needed <em>Platform Tools<em> (https://goo.gl/2rgkLY). Due to the fact that the app reboots, it's better if you take it with a pc rathern than with an app. Plug the device into your PC, you start the cmd.exe as administrator (or, if you use Linux, you need to open the terminal with root privileges) and run the command <em>"adb shell"<em>, now the console will show the internal console of the device. From there, run <em>"su"<em>, a prompt will appear to your device to ask for root permission. Approve it, then run "cd /sdcard/Download". Afterwards, run <em>"logcat >> log.txt"<em> (Nothing will appear on screen because it's redirecting every output to the log file). Now start the patch. When it gives the error (or after it reboots), close the app, click <em>"Ctrl + C"<em> to stop the logcat. Then, from the device, send us the log.txt (you will find it in your Download folder).
+
+
