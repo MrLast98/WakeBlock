@@ -38,7 +38,7 @@
 
 **Q - Your app killed [insert any feature here] in my device!**
 
-**A** - Everything is done by user input, the app by itself (even with the core mod installed) doesn't do anything but reading which wakelock the system is calling. Unless you blocked something we didn't suggest you do to this problem and our app are totally unrelated.
+**A** - Everything is done by user input, the app by itself (even with the core mod installed) doesn't do anything but reading which wakelock the system is calling. Unless you blocked something we didn't suggest you do to, this problem and our app are totally unrelated.
 
 **Q - I want to build the service.odex for my device manually, how do i do that?**
 
