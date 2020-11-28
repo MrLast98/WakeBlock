@@ -1,75 +1,76 @@
-# FAQ
-## Here you can find the most common questions and their respective answer. Simple as that. READ THEM.
+# 常见问题解答
+## 在这里，你可以找到最常见的问题及其答案。就这么简单。要好好读哦。
 
-**Q - How do I use WakeBlock?**
+**问 - 如何使用阻止唤醒？**
 
-**A** - Once you have installed the app, just open it and click on "Install Core Mod". Choose your flash type off the list (Automatic = Flashed once the zip file is created, Manual = Manually reboot to recovery and flash the flash-me.zip in the WakeBlock folder, Magisk = Manually open the Magisk app and flash the wakeblock-magisk.zip inside the WakeBlock folder) and flash it!
-**Side Note:** There is no difference in the patch itself between the different flashing method. The generic course of action is to use the Automatic or the Magisk flash. If those fails, try the Manual one.
+**答** - 当你安装好app后，点击它并点击“安装核心Mod”。从列表中选择你的刷入类型（自动=zip文件创建后立即刷入，手动=手动重启到恢复模式并在WakeBlock文件夹中刷入flash-me.zip，Magisk =手动打开Magisk应用并在WakeBlock文件夹中找到wakeblock-magisk.zip并刷入!
+**附注：** 不同的刷入方式对于补丁本身并没有区别。一般的做法是使用自动或Magisk刷入。如果这些都失败了，可以试试手动的。
 
-**Q - How can I block wakelocks?**
+**问 - 怎样才能屏蔽唤醒？**
 
-**A** - From within the app, just switch to the "Wakelock" tab. Here every wakelock recorded since the first boot with the core mod installed, so give it at least 2/3 days of normal use before blocking anything. Click on the wakelock you want to block, press the "Block" button and then set for how long is the wakelock gonna be blocked!
+**答** - 只需切换应用中的“唤醒锁”标签页。这里记录了自安装核心mod后的第一次启动以来的所有唤醒锁，所以在阻止任何东西之前，至少正常使用设备两三天。点击你想要阻止的唤醒锁，按下“阻止”按钮，然后设置唤醒锁被阻止的时长。
 
-**Q - Which wakelock should I block? For how long?**
+**问 - 我应该阻止哪种唤醒锁？阻止多久？**
 
-**A** - We suggest to check out this guide on XDA (https://goo.gl/PFAPJ2) to fully understand what it means to block a wakelocks and how it affects your system. 
+**答** - 我们建议查看XDA(https://goo.gl/PFAPJ2)上的这篇指南，以充分了解阻止唤醒锁的后果以及它对系统的影响。
 
-**Q - I'm lazy af and I don't want to read all of that, can't you give me a short list?**
+**问 - 我懒得要死，不想看这些，你能不能给我一个简短的名单？**
 
-**A** - Ok, but we don't take any responsibilities if the device bricks or your ROM explodes. You are totally free to change the blocking time value to make it as you please but, again, we don't take any responsibilities. You can find the list here: https://github.com/MrLast98/WakeBlock/blob/master/wakelocks.md
-**Remember:** if you don't find one of the wakelocks, just check in later. If you still don't find it, don't worry at all!
-**Side Note:** the search button is _not_ case-sensitive.
+**答** - 好的，但如果设备出现故障或ROM爆炸，我们不承担任何责任。你可以根据喜好任意改变阻断时间的值，但是，我们同样不承担任何责任。列表在这里：https://github.com/MrLast98/WakeBlock/blob/master/wakelocks.md
+**记住：** 如果你没有找到其中的一个唤醒锁，以后再来看看。如果还是没有找到，那就忘掉它吧！
+**附注：** 搜索按钮_不_区分大小写。
 
-**Q - Can I block the [wakelock name] wakelock?**
+**问 - 能否阻止[巴拉巴拉]唤醒锁？**
 
-**A** - If it is part of the list linked above, you're good to go! If not, we can't assure a thing, but if you find any safe-to-block wakelock let us know!
+**答** - 如果它在上面链接的列表中，那你大可放心！如果不是，我们不能做任何保证，不过如果你找到任何可以安全阻止的唤醒锁，请告诉我们！
 
-**Q - Your app is great: How can I donate to you guys?**
+**问 - 你们的应用很好：我该怎样能给你们捐款？**
 
-**A** - First, thank you! Second, we have a Patreon set up! Here's the link! https://www.patreon.com/wakeblock
+**答** - 首先，谢谢你！其次，我们已经建立了一个Patreon! 链接在这里！https://www.patreon.com/wakeblock
 
-**Q - I installed the Magisk Module and everything exploded! How can I remove it?**
+**问 - 我安装了Magisk模块然后瞬间爆炸! 我怎么才能把它去掉？**
 
-**A** - If you device bootloops (it\'s HIGHLY UNLIKELY, but we stil love your device) simply create a file in your /system (or /system/system for A/B devices) called "disable.module" and the module will be automagically removed! After the removal, you MUST remove the disable.module file by yourself [Temporary]
+**答** - 如果你的设备卡logo了（概率非常小，但我们仍然爱你的设备），只需在你的/system（或A/B设备的/system/system）中创建一个名为“disable.module”的文件，该模块就会被自动删除! 删除模块后，您必须自行移除disable.module文件[Temporary] 。
 
-**Q - When is the new version/fix/graphic coming?**
+**问 - 新版本/修复/插图什么时候来？**
 
-**A** - _Do not ask for an ETA._ We do this for free, without any ads in the app nor donation packages, we don't even put a price on our app. We all have jobs, university and a private life to manage, we don't have superpowers, so managing all of this takes time. Our free time is pretty short, but we usually put at least half of it on the developing of the app. Be patient and do not harass the team nor the Telegram group.
+**答** - _压根别问。_ 我们免费做这件事，应用中没有任何广告，也没有捐赠套餐，我们甚至不给我们的应用定价。我们都有工作，大学和私人生活需要处理，我们没有超能力，所以处理这些都需要时间。我们的空闲时间很短，但我们通常会把至少一半的时间放在开发应用上。请耐心等待，不要骚扰团队和Telegram组。
 
-**Q - Your app killed [insert any feature here] in my device!**
+**问 - 你的应用把我设备上[巴拉巴拉功能]玩死了！**
 
-**A** - Everything is done by user input, the app by itself (even with the core mod installed) doesn't do anything but reading which wakelock the system is calling. Unless you blocked something we didn't suggest you do to this problem and our app are totally unrelated.
+**答** - 所有的事情都是由用户输入完成的，应用本身（即使安装了核心模块）除了读取系统调用的唤醒锁之外，什么都不会做。除非你屏蔽了一些我们不建议你屏蔽的东西，这个问题和我们的应用完全没有关系。
 
-**Q - I want to build the service.odex for my device manually, how do i do that?**
+**问 - 我想为我的设备手动建立service.odex，我该怎么做？**
 
-**A** - **GUIDE FOR ODEXED ROMS** Easy: Download the **whole sourcecode** of your ROM, then copy the files you find here https://goo.gl/vg23MU in _wakeblock/templates/java/services/core/java/com/_ and place them into the sourcecode. You will deal with _two_ files: *PowerManagerService.java* and *WakeBlockService.java*. For **WakeBlockService.java**, you just need to create the directory tree into your sourcecode **corresponding to the GitHub directory tree** (_services/core/java/com/giovannibozzano/wakeblock_) and place the file there, for **PowerManagerService.java**, you have to check inside the *PowerManagerService.java* file on GitHub for the piece of code **surrounded in "WAKEBLOCK" comments** and place that piece of code **in the same place inside your PowerManagerService.java** in ***the same place as you see in the file on GitHub***. Then, just run the command **make services** in your shell of choice and you will have in your output directory *all the files you need!* (**SIDE NOTE:** You only need **service.odex and service.vdex**, nothing else). Just copy the old .odex and .vdex somewhere as a backup and place the file you created in the *right directory* (**/system/framework/oat/arm** or **/system/framework/oat/arm64**, depending on your system). If it bootloops, **you might have fucked up!**
+**答** - **适合ODEXED ROM的教程** 简单版：下载你的ROM的**完整源代码**，然后这里的文件 https://goo.gl/vg23MU 复制到 _wakeblock/templates/java/services/core/java/com/_ 并将它们合并到源代码。你需要处理_两个_文件：*PowerManagerService.java* 和 *WakeBlockService.java*。对于 **WakeBlockService.java**，你只需**根据GitHub目录树的结构**，将目录树创建到你的源代码中（_services/core/java/com/giovannibozzano/wakeblock_），然后将文件放进去；对于**PowerManagerService.java**，
+你必须在GitHub上的*PowerManagerService.java*文件中找**“WAKEBLOCK”注释包围的**那段代码，并将这段代码**放在你的PowerManagerService.java**的同一个位置，***与你在GitHub上的文件的位置相同***。然后，只要在你自己的shell中运行**make services**命令，你的输出目录中就会有*所有你需要的文件！*。（**注释** 你只需要**service.odex 和 service.vdex**，没别的了）。只需将旧的.odex和.vdex复制到某个地方作为备份，并将你创建的文件放在*正确的目录*（**/system/framework/oat/arm**或**/system/framework/oat/arm64**，取决于你的系统）。如果卡logo了，**那你就把你的手机干坏了！**
 
-**Q - Your app is killing my battery life! WTF!**
+**问 - 你的应用把我电量都搞没了！什么鬼！**
 
-**A** - By itself, the app doesn't do anything even with the core mod installed. Keep WakeBlock whitelisted in every hybernation app (like greenify) but the basic Android Optimization. If the battery drain has increased, double check what you blocked, that might be the reason!
+**答** 即使安装了核心模块，应用本身也不会做任何事情。把阻止唤醒放在除了基本的Android优化之外的所有休眠应用中的白名单里（比如绿色守护）。如果电池消耗增加了，请仔细检查你阻止的唤醒锁，它们可能是掉电的原因！
 
-**Q - How can I MANUALLY uninstall the app/coremod?**
+**问 - 如何才能手动卸载应用/核心修改？**
 
-**A** - First of all, *we are sad that you want to leave us.* If you **didn't install the Core Mod**, or it failed in any way, *you just need to delete the app* and everything is gone! If you **did install successfully the Core Mod**, check the WakeBlock backup folder ***(/sdcard/WakeBlock/Backups).*** Here, you will have one of **two cases:**
+**答** - 首先，*我们很伤心你要离开我们。*如果你**没有安装核心破解**，或者以任何方式安装失败，*你只需要删除应用*，一切就都没了！如果你**成功安装了核心破解**，请检查WakeBlock备份文件夹***(/sdcard/WakeBlock/Backups).***在这里，你会遇到**两种情况**之一：
 
-1. If you flashed the file using the **"Automatic"** or **"Manual"** option, you will find different folders with a backup inside them in /sdcard/WakeBlock/Bakups, *they are taken every time you patch and won't be deleted unless you manually delete it*, just **flash the zip file inside the folder with the most recent date and you're good to go**.
+1. 如果你使用**“自动”**或**“手动”**选项刷入文件，你会在/sdcard/WakeBlock/Backups找到不同的文件夹，里面有备份，*每次打补丁的时候都会生成备份，如果你不手动删除它，它就不会被删掉*，只要**刷入最近日期的文件夹里面的zip文件就好啦**。
 
-2. If you went for the **"Magisk Module"**, simply create a file in your /system (or /system/system for A/B devices) called **"disable.module"** and the module will be automagically removed! After the removal, you *MUST remove the disable.module file by yourself*.
+2. 如果你选择的是**“Magisk模块”**，只需在你的/system（或A/B设备的/system/system）中建立一个名为**“disable.module”**的文件，该模块就会超神奇地自动删除! 删除模块后，您*必须自行删掉disable.module文件*。
 
-**Q - YOUR APP DOESN'T WORK, WHY?**
+**问 - 你的应用用不了，为什么啊？**
 
-**A** - It works. We tested it (and we keep testing it) many times before committing an update! Double check permissons and give it a reboot, usually fixes most of the "doesn't work" problems.
+**答** - 能用。在提交更新前，我们都测试（而且是持续在测试）很多次！检查下权限，然后重启下，通常这些“用不了”问题都可以解决。
 
-**Q - I found a bug! How can I report it?**
+**问 - 我找到bug了！怎样报告bug呢？**
 
-**A** - First of all, check on the telegram group (https://t.me/wakeblock) if anyone else had your problem, both by first searching and then asking directly. If no one can help you on the spot, send a ticket on the @WakeBlockSupportBot. It will ask for a logcat, so make sure you make one while you encounter the problem. _DO NOT CONTACT ANYONE OF THE TEAM UNLESS EXPLICITLY ASKED TO._
+**答** - 首先，在telegram群（https://t.me/wakeblock）上查看是否有其他人遇到了你的问题。先搜一下，然后再提问。如果没有人能够当场帮助你，可以在@WakeBlockSupportBot上发个问题单。它会要求你提供一个日志logcat，所以在你遇到问题的时候一定要准备一个logcat。_除非获得明确请求，否则不要联系团队中的任何人。_
 
-**Q - How do I take a logcat?**
+**问 - 如何采集logcat？**
 
-**A** - First of all, make sure that you have the needed _Platform Tools_ (https://goo.gl/2rgkLY). Due to the fact that the app reboots, it's better if you take it with a pc rathern than with an app. Plug the device into your PC, you start the cmd.exe as administrator (or, if you use Linux, you need to open the terminal with root privileges) and run the command _"adb shell"_, now the console will show the internal console of the device. From there, run _"su"_, a prompt will appear to your device to ask for root permission. Approve it, then run "cd /sdcard/Download". Afterwards, run _"logcat >> log.txt"_ (Nothing will appear on screen because it's redirecting every output to the log file). Now start the patch. When it gives the error (or after it reboots), close the app, click _"Ctrl + C"_ to stop the logcat. Then, from the device, send us the log.txt (you will find it in your Download folder).
+**答** - 首先，确保你有需要的_平台工具_（https://goo.gl/2rgkLY）。事实上，由于应用会重启，你用PC采集日志比用app更好。把设备连接到你的PC，以管理员身份启动cmd.exe（抑或，如果你使用Linux，你需要打开具有root权限的终端），并运行命令_“adb shell”_，现在控制台将显示设备的内部控制台。在那儿运行_“su”_，会出现一个提示，向你的设备询问root权限。批准权限，再运行 “cd /sdcard/Download”。然后，运行_“logcat >> log.txt”_ （屏幕上不会出现任何内容，因为所有输出都被重定向到日志文件)。现在开始打补丁。当它给出错误时（或重启后），关闭应用程序，按_“Ctrl + C”_停止logcat。然后，把设备上的log.txt发给我们（你会在下载文件夹中找到它）。
 
-## TO-DO LIST
-- Alarms. Yeah.
-- Flags for extensive debug messages vs a phase based message
-- Kernel Wakelocks? Maybe?
-- Various fixes and improvements
+## 待办事项
+- 闹钟。嗯。
+- 一大堆调试信息的标记与基于阶段的信息
+- 内核唤醒锁？可以试试？
+- 很多修复和改进
