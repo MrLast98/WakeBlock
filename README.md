@@ -3,7 +3,7 @@
 
 **Q - How do I use WakeBlock?**
 
-**A** - Once you have installed the app, just open it and click on "Install Core Mod". Choose your flash type off the list (Automatic = Flashed once the zip file is created, Manual = Manually reboot to recovery and flash the flash-me.zip in the WakeBlock folder, Magisk = Manually open the Magisk app and flash the wakeblock-magisk.zip inside the WakeBlock folder) and flash it!
+**A** - Once you have installed the app, just open it and click on "Install Core Mod". Choose your flash type off the list (Automatic = Flashed once the zip file is created, Manual = Manually reboot to recovery and flash the flash-me.zip in the WakeBlock folder, Magisk = Manually open the Magisk app and find wakeblock-magisk.zip inside the WakeBlock folder and flash it!
 **Side Note:** There is no difference in the patch itself between the different flashing method. The generic course of action is to use the Automatic or the Magisk flash. If those fails, try the Manual one.
 
 **Q - How can I block wakelocks?**
@@ -46,19 +46,19 @@
 
 **Q - Your app is killing my battery life! WTF!**
 
-**A** - By itself, the app doesn't do anything even with the core mod installed. Keep WakeBlock whitelisted in every hybernation app (like greenify) but the basic Android Optimization. If the battery drain has increased, double check what you blocked, that might be the reason!
+**A** - By itself, the app doesn't do anything even with the core mod installed. Keep WakeBlock whitelisted in every hibernation app (like greenify) but the basic Android Optimization. If the battery drain has increased, double check what you blocked, that might be the reason!
 
 **Q - How can I MANUALLY uninstall the app/coremod?**
 
 **A** - First of all, *we are sad that you want to leave us.* If you **didn't install the Core Mod**, or it failed in any way, *you just need to delete the app* and everything is gone! If you **did install successfully the Core Mod**, check the WakeBlock backup folder ***(/sdcard/WakeBlock/Backups).*** Here, you will have one of **two cases:**
 
-1. If you flashed the file using the **"Automatic"** or **"Manual"** option, you will find different folders with a backup inside them in /sdcard/WakeBlock/Bakups, *they are taken every time you patch and won't be deleted unless you manually delete it*, just **flash the zip file inside the folder with the most recent date and you're good to go**.
+1. If you flashed the file using the **"Automatic"** or **"Manual"** option, you will find different folders with a backup inside them in /sdcard/WakeBlock/Backups, *they are taken every time you patch and won't be deleted unless you manually delete it*, just **flash the zip file inside the folder with the most recent date and you're good to go**.
 
 2. If you went for the **"Magisk Module"**, simply create a file in your /system (or /system/system for A/B devices) called **"disable.module"** and the module will be automagically removed! After the removal, you *MUST remove the disable.module file by yourself*.
 
 **Q - YOUR APP DOESN'T WORK, WHY?**
 
-**A** - It works. We tested it (and we keep testing it) many times before committing an update! Double check permissons and give it a reboot, usually fixes most of the "doesn't work" problems.
+**A** - It works. We tested it (and we keep testing it) many times before committing an update! Double check permissions and give it a reboot, usually fixes most of the "doesn't work" problems.
 
 **Q - I found a bug! How can I report it?**
 
@@ -66,7 +66,7 @@
 
 **Q - How do I take a logcat?**
 
-**A** - First of all, make sure that you have the needed _Platform Tools_ (https://goo.gl/2rgkLY). Due to the fact that the app reboots, it's better if you take it with a pc rathern than with an app. Plug the device into your PC, you start the cmd.exe as administrator (or, if you use Linux, you need to open the terminal with root privileges) and run the command _"adb shell"_, now the console will show the internal console of the device. From there, run _"su"_, a prompt will appear to your device to ask for root permission. Approve it, then run "cd /sdcard/Download". Afterwards, run _"logcat >> log.txt"_ (Nothing will appear on screen because it's redirecting every output to the log file). Now start the patch. When it gives the error (or after it reboots), close the app, click _"Ctrl + C"_ to stop the logcat. Then, from the device, send us the log.txt (you will find it in your Download folder).
+**A** - First of all, make sure that you have the needed _Platform Tools_ (https://goo.gl/2rgkLY). Due to the fact that the app reboots, it's better if you take it with a pc rather than with an app. Plug the device into your PC, you start the cmd.exe as administrator (or, if you use Linux, you need to open the terminal with root privileges) and run the command _"adb shell"_, now the console will show the internal console of the device. From there, run _"su"_, a prompt will appear to your device to ask for root permission. Approve it, then run "cd /sdcard/Download". Afterwards, run _"logcat >> log.txt"_ (Nothing will appear on screen because it's redirecting every output to the log file). Now start the patch. When it gives the error (or after it reboots), close the app, click _"Ctrl + C"_ to stop the logcat. Then, from the device, send us the log.txt (you will find it in your Download folder).
 
 ## TO-DO LIST
 - Alarms. Yeah.
