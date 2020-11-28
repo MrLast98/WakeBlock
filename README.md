@@ -3,7 +3,7 @@
 
 **Q - How do I use WakeBlock?**
 
-**A** - Once you have installed the app, just open it and click on "Install Core Mod". Choose your flash type off the list (Automatic = Flashed once the zip file is created, Manual = Manually reboot to recovery and flash the flash-me.zip in the WakeBlock folder, Magisk = Manually open the Magisk app and flash the wakeblock-magisk.zip inside the WakeBlock folder) and flash it!
+**A** - Once you have installed the app, just open it and click on "Install Core Mod". Choose your flash type off the list (Automatic = Flashed once the zip file is created, Manual = Manually reboot to recovery and flash the flash-me.zip in the WakeBlock folder, Magisk = Manually open the Magisk app and find wakeblock-magisk.zip inside the WakeBlock folder and flash it!
 **Side Note:** There is no difference in the patch itself between the different flashing method. The generic course of action is to use the Automatic or the Magisk flash. If those fails, try the Manual one.
 
 **Q - How can I block wakelocks?**
@@ -38,27 +38,27 @@
 
 **Q - Your app killed [insert any feature here] in my device!**
 
-**A** - Everything is done by user input, the app by itself (even with the core mod installed) doesn't do anything but reading which wakelock the system is calling. Unless you blocked something we didn't suggest you do to this problem and our app are totally unrelated.
+**A** - Everything is done by user input, the app by itself (even with the core mod installed) doesn't do anything but reading which wakelock the system is calling. Unless you blocked something we didn't suggest you do to, this problem and our app are totally unrelated.
 
 **Q - I want to build the service.odex for my device manually, how do i do that?**
 
-**A** - **GUIDE FOR ODEXED ROMS** Easy: Download the **whole sourcecode** of your ROM, then copy the files you find here https://goo.gl/vg23MU in _wakeblock/templates/java/services/core/java/com/_ and place them into the sourcecode. You will deal with _two_ files: *PowerManagerService.java* and *WakeBlockService.java*. For **WakeBlockService.java**, you just need to create the directory tree into your sourcecode **corresponding to the GitHub directory tree** (_services/core/java/com/giovannibozzano/wakeblock_) and place the file there, for **PowerManagerService.java**, you have to check inside the *PowerManagerService.java* file on GitHub for the piece of code **surrounded in "WAKEBLOCK" comments** and place that piece of code **in the same place inside your PowerManagerService.java** in ***the same place as you see in the file on GitHub***. Then, just run the command **make services** in your shell of choice and you will have in your output directory *all the files you need!* (**SIDE NOTE:** You only need **service.odex and service.vdex**, nothing else). Just copy the old .odex and .vdex somewhere as a backup and place the file you created in the *right directory* (**/system/framework/oat/arm** or **/system/framework/oat/arm64**, depending on your system). If it bootloops, **you might have fucked up!**
+**A** - **GUIDE FOR ODEXED ROMS** Easy: Download the **whole sourcecode** of your ROM, then copy the files you find here https://goo.gl/vg23MU in _wakeblock/templates/java/services/core/java/com/_ and place them into the sourcecode. You will deal with _two_ files: *PowerManagerService.java* and *WakeBlockService.java*. For **WakeBlockService.java**, you just need to create the directory tree into your sourcecode **corresponding to the GitHub directory tree** (_services/core/java/com/giovannibozzano/wakeblock_) and place the file there; for **PowerManagerService.java**, you have to check inside the *PowerManagerService.java* file on GitHub for the piece of code **surrounded in "WAKEBLOCK" comments** and place that piece of code **in the same place inside your PowerManagerService.java** in ***the same place as you see in the file on GitHub***. Then, just run the command **make services** in your shell of choice and you will have in your output directory *all the files you need!* (**SIDE NOTE:** You only need **service.odex and service.vdex**, nothing else). Just copy the old .odex and .vdex somewhere as a backup and place the file you created in the *right directory* (**/system/framework/oat/arm** or **/system/framework/oat/arm64**, depending on your system). If it bootloops, **you might have fucked up!**
 
 **Q - Your app is killing my battery life! WTF!**
 
-**A** - By itself, the app doesn't do anything even with the core mod installed. Keep WakeBlock whitelisted in every hybernation app (like greenify) but the basic Android Optimization. If the battery drain has increased, double check what you blocked, that might be the reason!
+**A** - By itself, the app doesn't do anything even with the core mod installed. Keep WakeBlock whitelisted in every hibernation app (like greenify) but the basic Android Optimization. If the battery drain has increased, double check what you blocked, that might be the reason!
 
 **Q - How can I MANUALLY uninstall the app/coremod?**
 
 **A** - First of all, *we are sad that you want to leave us.* If you **didn't install the Core Mod**, or it failed in any way, *you just need to delete the app* and everything is gone! If you **did install successfully the Core Mod**, check the WakeBlock backup folder ***(/sdcard/WakeBlock/Backups).*** Here, you will have one of **two cases:**
 
-1. If you flashed the file using the **"Automatic"** or **"Manual"** option, you will find different folders with a backup inside them in /sdcard/WakeBlock/Bakups, *they are taken every time you patch and won't be deleted unless you manually delete it*, just **flash the zip file inside the folder with the most recent date and you're good to go**.
+1. If you flashed the file using the **"Automatic"** or **"Manual"** option, you will find different folders with a backup inside them in /sdcard/WakeBlock/Backups, *they are taken every time you patch and won't be deleted unless you manually delete it*, just **flash the zip file inside the folder with the most recent date and you're good to go**.
 
 2. If you went for the **"Magisk Module"**, simply create a file in your /system (or /system/system for A/B devices) called **"disable.module"** and the module will be automagically removed! After the removal, you *MUST remove the disable.module file by yourself*.
 
 **Q - YOUR APP DOESN'T WORK, WHY?**
 
-**A** - It works. We tested it (and we keep testing it) many times before committing an update! Double check permissons and give it a reboot, usually fixes most of the "doesn't work" problems.
+**A** - It works. We tested it (and we keep testing it) many times before committing an update! Double check permissions and give it a reboot, usually fixes most of the "doesn't work" problems.
 
 **Q - I found a bug! How can I report it?**
 
@@ -66,7 +66,7 @@
 
 **Q - How do I take a logcat?**
 
-**A** - First of all, make sure that you have the needed _Platform Tools_ (https://goo.gl/2rgkLY). Due to the fact that the app reboots, it's better if you take it with a pc rathern than with an app. Plug the device into your PC, you start the cmd.exe as administrator (or, if you use Linux, you need to open the terminal with root privileges) and run the command _"adb shell"_, now the console will show the internal console of the device. From there, run _"su"_, a prompt will appear to your device to ask for root permission. Approve it, then run "cd /sdcard/Download". Afterwards, run _"logcat >> log.txt"_ (Nothing will appear on screen because it's redirecting every output to the log file). Now start the patch. When it gives the error (or after it reboots), close the app, click _"Ctrl + C"_ to stop the logcat. Then, from the device, send us the log.txt (you will find it in your Download folder).
+**A** - First of all, make sure that you have the needed _Platform Tools_ (https://goo.gl/2rgkLY). Due to the fact that the app reboots, it's better if you take it with a pc rather than with an app. Plug the device into your PC, you start the cmd.exe as administrator (or, if you use Linux, you need to open the terminal with root privileges) and run the command _"adb shell"_, now the console will show the internal console of the device. From there, run _"su"_, a prompt will appear to your device to ask for root permission. Approve it, then run "cd /sdcard/Download". Afterwards, run _"logcat >> log.txt"_ (Nothing will appear on screen because it's redirecting every output to the log file). Now start the patch. When it gives the error (or after it reboots), close the app, click _"Ctrl + C"_ to stop the logcat. Then, from the device, send us the log.txt (you will find it in your Download folder).
 
 ## TO-DO LIST
 - Alarms. Yeah.
