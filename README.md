@@ -3,7 +3,7 @@
 
 **Q - How do I use WakeBlock?**
 
-**A** - Once you have installed the app, just open it and click on "Install Core Mod". Choose your flash type off the list (Automatic = Flashed once the zip file is created, Manual = Manually reboot to recovery and flash the flash-me.zip in the WakeBlock folder, Magisk = Manually open the Magisk app and find wakeblock-magisk.zip inside the WakeBlock folder and flash it!
+**A** - Once you have installed the app, just open it and click on "Install Core Mod". Choose your flash type off the list. Automatic = Flashed once the zip file is created, Manual = Manually reboot to recovery and flash the flash-me.zip in the WakeBlock folder, Magisk = Manually open the Magisk app and find wakeblock-magisk.zip inside the WakeBlock folder and flash it!
 **Side Note:** There is no difference in the patch itself between the different flashing method. The generic course of action is to use the Automatic or the Magisk flash. If those fails, try the Manual one.
 
 **Q - How can I block wakelocks?**
