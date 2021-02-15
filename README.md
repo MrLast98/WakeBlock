@@ -1,4 +1,5 @@
 # FAQ
+[中文](README-zh.md)
 ## Here you can find the most common questions and their respective answer. Simple as that. READ THEM.
 
 **Q - How do I use WakeBlock?**
