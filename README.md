@@ -1,9 +1,10 @@
 # FAQ
+[中文](README-zh.md)
 ## Here you can find the most common questions and their respective answer. Simple as that. READ THEM.
 
 **Q - How do I use WakeBlock?**
 
-**A** - Once you have installed the app, just open it and click on "Install Core Mod". Choose your flash type off the list (Automatic = Flashed once the zip file is created, Manual = Manually reboot to recovery and flash the flash-me.zip in the WakeBlock folder, Magisk = Manually open the Magisk app and find wakeblock-magisk.zip inside the WakeBlock folder and flash it!
+**A** - Once you have installed the app, just open it and click on "Install Core Mod". Choose your flash type off the list. Automatic = Flashed once the zip file is created, Manual = Manually reboot to recovery and flash the flash-me.zip in the WakeBlock folder, Magisk = Manually open the Magisk app and find wakeblock-magisk.zip inside the WakeBlock folder and flash it!
 **Side Note:** There is no difference in the patch itself between the different flashing method. The generic course of action is to use the Automatic or the Magisk flash. If those fails, try the Manual one.
 
 **Q - How can I block wakelocks?**
@@ -66,7 +67,7 @@
 
 **Q - How do I take a logcat?**
 
-**A** - First of all, make sure that you have the needed _Platform Tools_ (https://goo.gl/2rgkLY). Due to the fact that the app reboots, it's better if you take it with a pc rather than with an app. Plug the device into your PC, you start the cmd.exe as administrator (or, if you use Linux, you need to open the terminal with root privileges) and run the command _"adb shell"_, now the console will show the internal console of the device. From there, run _"su"_, a prompt will appear to your device to ask for root permission. Approve it, then run "cd /sdcard/Download". Afterwards, run _"logcat >> log.txt"_ (Nothing will appear on screen because it's redirecting every output to the log file). Now start the patch. When it gives the error (or after it reboots), close the app, click _"Ctrl + C"_ to stop the logcat. Then, from the device, send us the log.txt (you will find it in your Download folder).
+**A** - First of all, make sure that you have the needed _Platform Tools_ (https://goo.gl/2rgkLY). Due to the fact that the app reboots, it's better if you take it with a pc rather than with an app. Plug the device into your PC, you start the cmd.exe as administrator (or, if you use Linux, you need to open the terminal with root privileges) and run the command `adb shell`, now the console will show the internal console of the device. From there, run `su`, a prompt will appear to your device to ask for root permission. Approve it, then run `cd /sdcard/Download`. Afterwards, run `logcat >> log.txt` (Nothing will appear on screen because it's redirecting every output to the log file). Now start the patch. When it gives the error (or after it reboots), close the app, click `Ctrl + C` to stop the logcat. Then, from the device, send us the log.txt (you will find it in your Download folder).
 
 ## TO-DO LIST
 - Alarms. Yeah.

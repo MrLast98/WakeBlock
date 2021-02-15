@@ -1,24 +1,25 @@
+
 # 常见问题解答
 ## 在这里，你可以找到最常见的问题及其答案。就这么简单。要好好读哦。
 
 **问 - 如何使用阻止唤醒？**
 
-**答** - 当你安装好app后，点击它并点击“安装核心Mod”。从列表中选择你的刷入类型（自动=zip文件创建后立即刷入，手动=手动重启到恢复模式并在WakeBlock文件夹中刷入flash-me.zip，Magisk =手动打开Magisk应用并在WakeBlock文件夹中找到wakeblock-magisk.zip并刷入!
+**答** - 当你安装好app后，点击它并点击“安装核心修改”。从列表中选择你的刷入类型。自动=zip文件创建后立即刷入，手动=手动重启到恢复模式并在WakeBlock文件夹中刷入flash-me.zip，Magisk =手动打开Magisk应用，并在WakeBlock文件夹中找到wakeblock-magisk.zip并刷入！
 **附注：** 不同的刷入方式对于补丁本身并没有区别。一般的做法是使用自动或Magisk刷入。如果这些都失败了，可以试试手动的。
 
-**问 - 怎样才能屏蔽唤醒？**
+**问 - 怎样才能阻止唤醒？**
 
-**答** - 只需切换应用中的“唤醒锁”标签页。这里记录了自安装核心mod后的第一次启动以来的所有唤醒锁，所以在阻止任何东西之前，至少正常使用设备两三天。点击你想要阻止的唤醒锁，按下“阻止”按钮，然后设置唤醒锁被阻止的时长。
+**答** - 只需切换应用中的“唤醒锁”标签页。这里记录了自安装核心修改后的第一次启动以来的所有唤醒锁，所以在阻止任何东西之前，至少正常使用设备两三天。点击你想要阻止的唤醒锁，按下“阻止”按钮，然后设置唤醒锁被阻止的时长。
 
 **问 - 我应该阻止哪种唤醒锁？阻止多久？**
 
-**答** - 我们建议查看XDA(https://goo.gl/PFAPJ2)上的这篇指南，以充分了解阻止唤醒锁的后果以及它对系统的影响。
+**答** - 我们建议查看XDA （https://goo.gl/PFAPJ2 ）上的这篇指南，以充分了解阻止唤醒锁的后果以及它对系统的影响。
 
 **问 - 我懒得要死，不想看这些，你能不能给我一个简短的名单？**
 
 **答** - 好的，但如果设备出现故障或ROM爆炸，我们不承担任何责任。你可以根据喜好任意改变阻断时间的值，但是，我们同样不承担任何责任。列表在这里：https://github.com/MrLast98/WakeBlock/blob/master/wakelocks.md
 **记住：** 如果你没有找到其中的一个唤醒锁，以后再来看看。如果还是没有找到，那就忘掉它吧！
-**附注：** 搜索按钮_不_区分大小写。
+**附注：** 搜索按钮 _不_ 区分大小写。
 
 **问 - 能否阻止[巴拉巴拉]唤醒锁？**
 
@@ -42,8 +43,8 @@
 
 **问 - 我想为我的设备手动建立service.odex，我该怎么做？**
 
-**答** - **适合ODEXED ROM的教程** 简单版：下载你的ROM的**完整源代码**，然后这里的文件 https://goo.gl/vg23MU 复制到 _wakeblock/templates/java/services/core/java/com/_ 并将它们合并到源代码。你需要处理_两个_文件：*PowerManagerService.java* 和 *WakeBlockService.java*。对于 **WakeBlockService.java**，你只需**根据GitHub目录树的结构**，将目录树创建到你的源代码中（_services/core/java/com/giovannibozzano/wakeblock_），然后将文件放进去；对于**PowerManagerService.java**，
-你必须在GitHub上的*PowerManagerService.java*文件中找**“WAKEBLOCK”注释包围的**那段代码，并将这段代码**放在你的PowerManagerService.java**的同一个位置，***与你在GitHub上的文件的位置相同***。然后，只要在你自己的shell中运行**make services**命令，你的输出目录中就会有*所有你需要的文件！*。（**注释** 你只需要**service.odex 和 service.vdex**，没别的了）。只需将旧的.odex和.vdex复制到某个地方作为备份，并将你创建的文件放在*正确的目录*（**/system/framework/oat/arm**或**/system/framework/oat/arm64**，取决于你的系统）。如果卡logo了，**那你就把你的手机干坏了！**
+**答** - **适合ODEXED ROM的教程** 简单版：下载你的ROM的**完整源代码**，然后这里的文件 https://goo.gl/vg23MU 复制到 _wakeblock/templates/java/services/core/java/com/_ 并将它们合并到源代码。你需要处理 _两个_ 文件：*PowerManagerService.java* 和 *WakeBlockService.java*。对于 **WakeBlockService.java**，你只需**根据GitHub目录树的结构**，将目录树创建到你的源代码中（_services/core/java/com/giovannibozzano/wakeblock_），然后将文件放进去；对于**PowerManagerService.java**，
+你必须在GitHub上的*PowerManagerService.java*文件中找 **“WAKEBLOCK”注释包围的** 那段代码，并将这段代码 **放在你的PowerManagerService.java的同一个位置** ，***与你在GitHub上的文件对应的位置相同***。然后，只要在你自己的shell中运行**make services**命令，你的输出目录中就会有*所有你需要的文件！*。（**附注：** 你只需要**service.odex 和 service.vdex**，没别的了）。只需将旧的.odex和.vdex复制到某个地方作为备份，并将你创建的文件放在*正确的目录*（ **/system/framework/oat/arm** 或 **/system/framework/oat/arm64** ，取决于你的系统）。如果卡logo了，**那你就把你的手机干坏了！**
 
 **问 - 你的应用把我电量都搞没了！什么鬼！**
 
@@ -51,11 +52,11 @@
 
 **问 - 如何才能手动卸载应用/核心修改？**
 
-**答** - 首先，*我们很伤心你要离开我们。*如果你**没有安装核心破解**，或者以任何方式安装失败，*你只需要删除应用*，一切就都没了！如果你**成功安装了核心破解**，请检查WakeBlock备份文件夹***(/sdcard/WakeBlock/Backups).***在这里，你会遇到**两种情况**之一：
+**答** - 首先，*我们很伤心你要离开我们。* 如果你**没有安装核心破解**，或者以任何方式安装失败，*你只需要删除应用*，一切就都没了！如果你**成功安装了核心破解**，请检查WakeBlock备份文件夹 ***(/sdcard/WakeBlock/Backups).*** 在这里，你会遇到**两种情况**之一：
 
-1. 如果你使用**“自动”**或**“手动”**选项刷入文件，你会在/sdcard/WakeBlock/Backups找到不同的文件夹，里面有备份，*每次打补丁的时候都会生成备份，如果你不手动删除它，它就不会被删掉*，只要**刷入最近日期的文件夹里面的zip文件就好啦**。
+1. 如果你使用 **“自动”** 或 **“手动”** 选项刷入文件，你会在/sdcard/WakeBlock/Backups找到不同的文件夹，里面有备份， *每次打补丁的时候都会生成备份，如果你不手动删除它，它就不会被删掉* ，只要**刷入最近日期的文件夹里面的zip文件就好啦** 。
 
-2. 如果你选择的是**“Magisk模块”**，只需在你的/system（或A/B设备的/system/system）中建立一个名为**“disable.module”**的文件，该模块就会超神奇地自动删除! 删除模块后，您*必须自行删掉disable.module文件*。
+2. 如果你选择的是 **“Magisk模块”** ，只需在你的/system（或A/B设备的/system/system）中建立一个名为 **“disable.module”** 的文件，该模块就会超神奇地自动删除! 删除模块后，您 *必须自行删掉disable.module文件* 。
 
 **问 - 你的应用用不了，为什么啊？**
 
@@ -63,11 +64,11 @@
 
 **问 - 我找到bug了！怎样报告bug呢？**
 
-**答** - 首先，在telegram群（https://t.me/wakeblock）上查看是否有其他人遇到了你的问题。先搜一下，然后再提问。如果没有人能够当场帮助你，可以在@WakeBlockSupportBot上发个问题单。它会要求你提供一个日志logcat，所以在你遇到问题的时候一定要准备一个logcat。_除非获得明确请求，否则不要联系团队中的任何人。_
+**答** - 首先，在telegram群（ https://t.me/wakeblock ）上查看是否有其他人遇到了你的问题。先搜一下，然后再提问。如果没有人能够当场帮助你，可以在@WakeBlockSupportBot上发个问题单。它会要求你提供一个日志logcat，所以在你遇到问题的时候一定要准备一个logcat。_除非获得明确请求，否则不要联系团队中的任何人。_
 
 **问 - 如何采集logcat？**
 
-**答** - 首先，确保你有需要的_平台工具_（https://goo.gl/2rgkLY）。事实上，由于应用会重启，你用PC采集日志比用app更好。把设备连接到你的PC，以管理员身份启动cmd.exe（抑或，如果你使用Linux，你需要打开具有root权限的终端），并运行命令_“adb shell”_，现在控制台将显示设备的内部控制台。在那儿运行_“su”_，会出现一个提示，向你的设备询问root权限。批准权限，再运行 “cd /sdcard/Download”。然后，运行_“logcat >> log.txt”_ （屏幕上不会出现任何内容，因为所有输出都被重定向到日志文件)。现在开始打补丁。当它给出错误时（或重启后），关闭应用程序，按_“Ctrl + C”_停止logcat。然后，把设备上的log.txt发给我们（你会在下载文件夹中找到它）。
+**答** - 首先，确保你有需要的 _平台工具_ （ https://goo.gl/2rgkLY ）。事实上，由于应用会重启，你用PC采集日志比用app更好。把设备连接到你的PC，以管理员身份启动cmd.exe（抑或，如果你使用Linux，你需要打开具有root权限的终端），并运行命令 `adb shell` ，现在控制台将显示设备的内部控制台。在那儿运行 `su` ，会出现一个提示，向你的设备询问root权限。批准权限，再运行 “cd /sdcard/Download”。然后，运行 `logcat >> log.txt`  （屏幕上不会出现任何内容，因为所有输出都被重定向到日志文件)。现在开始打补丁。当它给出错误时（或重启后），关闭应用程序，按 `Ctrl + C` 停止logcat。然后，把设备上的log.txt发给我们（你会在下载文件夹中找到它）。
 
 ## 待办事项
 - 闹钟。嗯。
